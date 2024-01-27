@@ -27,8 +27,8 @@ function CardItem(props) {
               <p className='minifont'>Skills Used:- &nbsp;&nbsp;&nbsp; [</p>
             <ul className='minifont'>
                 {
-                    skillsUsed.map((skill) => (
-                        <li>{skill}</li>
+                    skillsUsed.map((skill, index) => (
+                        <li key={index}>{skill}</li>
                     ))
                 }
             </ul>]

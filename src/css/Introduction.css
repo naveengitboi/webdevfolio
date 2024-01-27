@@ -1,0 +1,39 @@
+.introcontainer {
+  padding: 0.5rem;
+  overflow: hidden;
+  border-radius: var(--border_radius);
+  border: 1px solid var(--border_light_color);
+  border-top: 1px solid hsl(0, 0%, 23%);
+  border-bottom: 1px solid rgba(60, 60, 60, 0.3);
+  position: relative;
+  margin: 2.5rem 0;
+}
+.introInnerContainer {
+  padding: 2rem;
+  padding-bottom: 0;
+  border: 1px solid var(--border_light_color);
+  border-top: 1px solid hsl(0, 0%, 23%);
+  border-bottom: 1px solid rgba(60, 60, 60, 0.466);
+  border-radius: var(--border_radius);
+}
+.intro {
+  height: 90vh;
+  color: rgb(222, 222, 222);
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.intro span {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  transition: all 0.45s ease;
+  cursor: cell;
+}
+
+.intro span:hover {
+  color: #bcff08;
+}

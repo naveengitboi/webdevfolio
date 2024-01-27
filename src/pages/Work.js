@@ -5,8 +5,8 @@ function Work() {
   return (
     <div className='workContainer'>
         {
-            projectsInfo.map((proj) => (
-                <CardItem content={proj}/>
+            projectsInfo.map((proj, index) => (
+                <CardItem key={index} content={proj}/>
             ))
         }
     </div>

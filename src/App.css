@@ -22,7 +22,7 @@ font-family: 'Space Grotesk', sans-serif;
   --link_padding: 0.5rem 1.25rem;
   /* colors */
   --gray_color:#252525;
-  --gray_light_color:#3c3c3c;
+  --gray_light_color:hsl(0, 0%, 24%);
   --gray_medium_color:#2d2d2d;
   --black_color:#101010;
   /* text color */
@@ -31,10 +31,10 @@ font-family: 'Space Grotesk', sans-serif;
   --text_bg_light: 0px 0px 10px rgb(101, 101, 101),  0px 0px 60px var(--text_gray_color);
   /* border colors */
   --border_dark_color: #0b0b0b;
-  --border_light_color: #363636;
+  --border_light_color: hsl(0, 0%, 18%);
 
   /* fontfamily */
-  --large_font_size: 5rem;
+  --large_font_size: 6rem;
   --main_font_size: 1.5rem;
   --medium_font_size: 1rem;
   --small_font_size:1rem;
@@ -44,7 +44,12 @@ font-family: 'Space Grotesk', sans-serif;
   --archivo_font: 'Archivo', sans-serif;
   --space_grotex: 'Space Grotesk', sans-serif;
 }
-
+.largefont
+{
+    font-size: var(--large_font_size);
+  font-family: var(--archivo_font);
+  font-weight:bold;
+}
 .mainfont
 {
   font-size: var(--main_font_size);
@@ -109,11 +114,25 @@ body
   background-image: linear-gradient(var(--gray_color),black);
   background-size: cover;
   background-repeat: no-repeat;
-
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .app 
 {
-  padding: 7rem var(--sides_padding) 2rem;
+  padding: 5rem var(--sides_padding) 2rem;
 }
 
+.cursor{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  mix-blend-mode: difference;
+  z-index: 500000000;
+  border-radius: 50%;
+  background-color: white;
+  transform: translate(-50%,-50%);
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
