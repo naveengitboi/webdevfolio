@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* font-family: 'Archivo', sans-serif; 
+100;0,200;0,300;0,400;0,600;0,700
+font-family: 'Space Grotesk', sans-serif;
+300;400;500;600;700
+*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* default classes and styles */
+:root
+{
+  /* padding */
+  --sides_padding: 4rem;
+  --link_padding: 0.5rem 1.25rem;
+  /* colors */
+  --gray_color:#252525;
+  --gray_light_color:#3c3c3c;
+  --gray_medium_color:#2d2d2d;
+  --black_color:#101010;
+  /* text color */
+  --text_color: #f2f2f2;
+  --text_gray_color:#808080;
+  --text_bg_light: 0px 0px 10px rgb(101, 101, 101),  0px 0px 60px var(--text_gray_color);
+  /* border colors */
+  --border_dark_color: #0b0b0b;
+  --border_light_color: #9a9a9a;
+
+  /* fontfamily */
+  --large_font_size: 5rem;
+  --main_font_size: 1.5rem;
+  --medium_font_size: 1.25rem;
+  --small_font_size:1rem;
+  --mini_font_size: 0.8rem;
+
+  /* archivo fontfamily */
+  --archivo_large_font: 'Archivo', sans-serif;
+  --space_grotex: 'Space Grotesk', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.linkEle
+{
+  border-radius: 1.5rem;
+
 }
+
+.linkEle:hover
+{
+  background-color:var(--gray_light_color);
+}
+
+.glow 
+{
+  box-shadow: 0px 0px 10px white;
+}
+
+.addblur
+{
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  filter: blur(2px);
+}
+a
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li 
+{
+  list-style-type: none;;
+}
+/* body style */
+
+body
+{
+  background-image: linear-gradient(var(--gray_color),black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.app 
+{
+  padding: 2rem var(--sides_padding);
+}
+
