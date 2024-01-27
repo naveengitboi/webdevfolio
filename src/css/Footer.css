@@ -1,0 +1,32 @@
+.footerContainer
+{
+    padding: 3rem inherit;
+    height: 40vh;
+    padding:10vh 0 ;
+    position: relative;
+}
+.horizontalline
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-20%);
+    width: 100vw;
+    height: 1px;
+    background: var(--gray_medium_color);
+}
+.footerContent
+{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerlinks p
+{
+    color: var(--text_gray_color);
+    text-transform: uppercase;
+}
+.footerlinks
+{
+    line-height: 2;
+}

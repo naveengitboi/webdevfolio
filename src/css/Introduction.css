@@ -2,28 +2,29 @@
   padding: 0.5rem;
   overflow: hidden;
   border-radius: var(--border_radius);
-  border: 1px solid var(--border_light_color);
-  border-top: 1px solid hsl(0, 0%, 23%);
-  border-bottom: 1px solid rgba(60, 60, 60, 0.3);
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0)) padding-box,
+              linear-gradient( rgba(75, 75, 75, 0), transparent) border-box;
   position: relative;
-  margin: 2.5rem 0;
+  margin: 2rem 0 6rem;
 }
 .introInnerContainer {
   padding: 2rem;
   padding-bottom: 0;
-  border: 1px solid var(--border_light_color);
-  border-top: 1px solid hsl(0, 0%, 23%);
-  border-bottom: 1px solid rgba(60, 60, 60, 0.466);
+    background: linear-gradient(var(--gray_color), rgba(10, 10, 10, 0.609)) padding-box,
+              linear-gradient( to right,hsl(0, 0%, 12%),rgba(255, 255, 255, 0.439), hsl(0, 0%, 12%)) border-box;
+  border: 0.1px solid transparent;
   border-radius: var(--border_radius);
+
 }
 .intro {
-  height: 90vh;
+  height: 80vh;
   color: rgb(222, 222, 222);
   font-weight: normal;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
+
 }
 .intro span {
   font-style: italic;

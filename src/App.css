@@ -73,6 +73,7 @@ font-family: 'Space Grotesk', sans-serif;
 {
   font-size:var(--mini_font_size);
   font-family: var(--archivo_font);
+  font-weight:bold;
 }
 
 .linkEle

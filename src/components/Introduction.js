@@ -6,7 +6,7 @@ function Introduction() {
     return (
         <div className="introcontainer">
             <div className="introInnerContainer">
-                <div className='largefont intro' onMouseMove={(e) => console.log(e)}>
+                <div className='largefont intro'>
                     <p>
                         <span>Web</span>
                         wizard, <span>graphic </span> virtuoso, and  <span>artistic</span> soul
