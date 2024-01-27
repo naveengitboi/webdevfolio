@@ -1,0 +1,99 @@
+.infoContainer 
+{
+    margin-top: 5rem;
+}
+
+.glowdot
+{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    margin-right: 0.5rem;
+}
+
+.aboutme p 
+{
+    color: var(--text_gray_color);
+    margin: 0.85rem 0;
+}
+
+.infoGrid
+{
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px 40px;
+    margin: 3rem 0;
+}
+.infoCard:nth-child(even){
+    flex-direction: column-reverse;
+}
+
+.infoCard
+{
+    display: flex;
+    flex-direction: column;
+}
+.imageCardContainer
+{   
+    --borderRadi:1rem;
+
+    padding: 0.5rem;
+    border-radius:var(--borderRadi);
+    background: linear-gradient(var(--gray_color), rgba(0, 0, 0, 0.26)) padding-box,
+              linear-gradient( rgb(75, 75, 75), var(--gray_medium_color)) border-box;
+  border: 0.1px solid transparent;
+  overflow: hidden;
+}
+.imageCardContainer img
+{
+      border-radius: var(--borderRadi);
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4/6;
+    object-fit: cover;
+}
+
+.profileInfo
+{
+    padding: 2rem;
+}
+
+.profileInfo .mainfont
+{
+    margin: 1rem 0;
+}
+
+.profileInfo .mediumfont
+{
+    color: var(--text_gray_color);
+}
+
+/* skills container */
+.skillsContainer
+{
+    padding: 4rem 0;
+    border-top: 2px solid var(--border_light_color);
+}
+.skillCards
+{
+    display: flex;
+    justify-content: space-between;    
+    align-items: baseline;
+    padding: 2rem 0;
+}
+
+.skillsCard>p 
+{
+    color: var(--text_gray_color);
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.skillsCard .skillNames li
+{
+    padding: 0.45rem 0;
+}

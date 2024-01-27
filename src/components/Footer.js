@@ -6,7 +6,7 @@ function Footer() {
             <div className="horizontalline"></div>
             <div className="footerContent">
                 <div className="leftContent">
-                    <h1 className='mainfont'>
+                    <h1 className='logo'>
                         JNAVEEN
                     </h1>
                 </div>
@@ -14,8 +14,10 @@ function Footer() {
                     <div className="footerlinks">
                         <p className='minifont'>Links</p>
                         <ul className='smallfont'>
+                            <li><a href="" >Github</a></li>
                             <li><a href="" >Leetcode</a></li>
                             <li><a href="" >Linked In</a></li>
+                            <li><a href="" >Instagram</a></li>
                         </ul>
                     </div>
                 </div>

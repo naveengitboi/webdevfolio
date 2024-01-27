@@ -1,7 +1,24 @@
-export const profileInfo = {
-    name:"Jangiti Naveen",
-    
-}
+export const profileInfo = [
+    {
+        question: "Status",
+        answer: "Prefinal Undergrad Mechanical student @NITC.  I love doing stuff which i feel worthy to attempt, never see for a hint in life while taking a step.",
+        imgUrl: '/assets/mine.jpg',
+    },
+    {
+        question: "What Else?",
+        answer: "I do Photoshop. I started casually and here it is, its still with me :)",
+        imgUrl: '/assets/photoshopasteroid.jpg',
+    },
+    {
+        question: "Any Hobbies?",
+        answer: "I do pen, pencil arts in my freetime. Same here I started for fun and now I'm loving this. Sometimes hobbies turns to Love",
+        imgUrl: '/assets/artwork.jpg',
+    }, {
+        question: "You know Blender?",
+        answer: "Hmm! Lets give a try and started working on blender, but my PC isn't that good enough to render images, for now I kept it aside.",
+        imgUrl: '/assets/blender.jpg',
+    },
+]
 
 export const skillInfo = [
     {

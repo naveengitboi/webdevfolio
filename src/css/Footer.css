@@ -1,7 +1,7 @@
 .footerContainer
 {
     padding: 3rem inherit;
-    height: 40vh;
+    height: 45vh;
     padding:10vh 0 ;
     position: relative;
 }
@@ -21,6 +21,14 @@
     justify-content: space-between;
     align-items: center;
 }
+.logo 
+{
+    font-family: var(--space_grotex);
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 200px;
+}
 .footerlinks p
 {
     color: var(--text_gray_color);
@@ -28,5 +36,20 @@
 }
 .footerlinks
 {
-    line-height: 2;
+    line-height: 2.5;
+}
+.footerlinks li 
+{
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s ease;
+    padding: 0.25rem 0.85rem 0 0;
+    border-radius: 0.15rem;
+}
+.footerlinks li:hover
+{
+    border-bottom: 1px solid white;
+}
+.footerContainer> p
+{
+    color: var(--text_gray_color);
 }
