@@ -85,27 +85,31 @@ export const experienceInfo = [
 export const projectsInfo = [
     {
         proj: "Youtube Clone",
-        projDescription: "Throughout my journey of replicating YouTubes exceptional UI design, I delved into React and backend tools, gaining valuable expertise in creating engaging user interfaces and powerful web applications.",
+        projDescription: "I mastered React and backend tools, excelling in crafting powerful web applications with engaging interfaces",
         skillsUsed:["React JS", "Mongo DB", "Authentication", "REST API", "Routers"],
-        projLink:"https://github.com/naveengitboi/youtubeclone"
+        projLink:"https://github.com/naveengitboi/youtubeclone",
+        imgUrl: '/assets/youtube.jpg'
     },
     {
         proj: "Student Learning Tracker",
-        projDescription: "Working on a website which track and keeps on eye on student learnings. Had a thought to integrate materials and more useful tools for any student who aims to keep daily streak in studies.This idea came when I realized I dont have a tool to keep track of my learning journey",
+        projDescription: "Creating a website to track student learning and provide essential tools, driven by the need for a personal learning journey companion.",
         skillsUsed: ["React JS","Express", "Mongo DB", "Authentication", "REST API", "Routers"],
-        projLink: "https://github.com/naveengitboi/student_tracker"
+        projLink: "https://github.com/naveengitboi/student_tracker",
+        imgUrl: '/assets/sttracker.jpg'
     },
     {
         proj: "Basic Dept clone",
-        projDescription: "I remaked a website characterized by exceptional elegance and impressive functionality, resulting in a seamless user experience using React JS, which helped me in knowing more usage of React JS",
+        projDescription: "Revamped a website for elegance and functionality using React JS, expanding my expertise in the framework.",
         skillsUsed: ["React JS", "Routers"],
-        projLink: "https://github.com/naveengitboi/basic_dept_clone"
+        projLink: "https://github.com/naveengitboi/basic_dept_clone",
+        imgUrl: '/assets/basicdept.jpg'
     },
     {
         proj: "Graphic Designfolio",
-        projDescription: "Executed a comprehensive project showcasing adept design skills, coupled with proficient utilization of Photoshop and various other design tools, underscoring my extensive experience",
+        projDescription: "Executed a design project, showcasing adept skills in Photoshop and design tools, underscoring extensive experience",
         skillsUsed: ["React JS", "Routers"],
         projLink: "https://graphicdesignerau.netlify.app/",
+        imgUrl: '/assets/gdfolio.jpg'
 
     },
 ]

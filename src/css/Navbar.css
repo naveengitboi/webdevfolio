@@ -6,6 +6,9 @@ nav {
   align-items: center;
   width: 100vw;
   font-family: var(--space_grotex);
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+
 }
 
 .logo 

@@ -31,12 +31,12 @@ font-family: 'Space Grotesk', sans-serif;
   --text_bg_light: 0px 0px 10px rgb(101, 101, 101),  0px 0px 60px var(--text_gray_color);
   /* border colors */
   --border_dark_color: #0b0b0b;
-  --border_light_color: #9a9a9a;
+  --border_light_color: #363636;
 
   /* fontfamily */
   --large_font_size: 5rem;
   --main_font_size: 1.5rem;
-  --medium_font_size: 1.25rem;
+  --medium_font_size: 1rem;
   --small_font_size:1rem;
   --mini_font_size: 0.8rem;
 
@@ -45,6 +45,25 @@ font-family: 'Space Grotesk', sans-serif;
   --space_grotex: 'Space Grotesk', sans-serif;
 }
 
+.mainfont
+{
+  font-size: var(--main_font_size);
+  font-family: var(--archivo_large_font);
+  font-weight:500;
+}
+.mediumfont
+{
+  font-size: var(--medium_font_size);
+  font-family: var(--space_grotex);
+  font-weight: normal;
+}
+
+.smallfont
+{
+  font-size: var(--small_font_size);
+  font-family: var(--space_grotex);
+
+}
 
 .linkEle
 {
@@ -85,11 +104,11 @@ body
   background-image: linear-gradient(var(--gray_color),black);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+
 }
 
 .app 
 {
-  padding: 2rem var(--sides_padding);
+  padding: 7rem var(--sides_padding) 2rem;
 }
 

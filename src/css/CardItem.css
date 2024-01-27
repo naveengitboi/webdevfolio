@@ -1,0 +1,70 @@
+:root{
+    --border_radius: 1rem;
+}
+
+.cardContainer
+{
+    padding: 0.5rem;
+    overflow: hidden;
+    border-radius:var(--border_radius);
+    border: 1px solid var(--border_light_color);
+    position: relative;
+    margin: 2.5rem 0;
+}
+
+.innerContainer
+{
+    padding: 2rem;
+    padding-bottom: 0;
+    border: 1px solid var(--border_light_color);
+    border-radius: var(--border_radius);
+}
+.topContent
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0 0  1.5rem 0;
+}
+.projDetails
+{
+    padding: 0 3rem 0 0 ;
+}
+
+.projDetails p:nth-child(2)
+{
+    color: var(--text_gray_color);
+}
+.arrowBtn a svg
+{
+    font-size: var(--main_font_size);
+}
+.info 
+{
+    border: 1px solid var(--border_light_color);
+    border-radius: var(--border_radius);
+    overflow: hidden;
+    
+}
+.info img
+{
+    width: 100%;
+    aspect-ratio: 4/2;
+    object-fit: cover;
+}
+
+.bottomInfoContainer
+{
+    position:absolute;
+    z-index: 5;
+}
+
+.bottomInfoContainer ul 
+{
+    display: flex;
+}
+
+.bottomInfoContainer ul li 
+{
+    padding: 0.5rem 1.25rem;
+}

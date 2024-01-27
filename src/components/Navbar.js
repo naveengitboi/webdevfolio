@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <nav className='navbar'>
             <div className="logo">
-                JN
+                J Naveen
             </div>
             <ul className='navlinks'>
                 <li><NavLink to='/' className='linkEle '>Work</NavLink></li>
