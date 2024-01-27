@@ -76,7 +76,12 @@
 .skillsContainer
 {
     padding: 4rem 0;
+    
     border-top: 2px solid var(--border_light_color);
+}
+.skillsContainer>p 
+{
+    color: var(--text_gray_color);
 }
 .skillCards
 {
@@ -96,4 +101,43 @@
 .skillsCard .skillNames li
 {
     padding: 0.45rem 0;
+}
+
+
+/* cexperienceContainer */
+.experienceContainer> p 
+{
+    color: var(--text_gray_color);
+    text-transform: uppercase;
+    border-top: 1px solid var(--border_light_color);
+    padding: 3rem 0;
+}
+.companiesList
+{
+    display: grid;
+    grid-template-columns: 1.65fr 2fr;
+    margin: 1rem 0 5rem;
+    padding: 2rem 0;
+}
+.companyName h1 
+{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0px 0 20px rgb(116, 116, 116);
+}
+.describeWork h1
+{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.period 
+{
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+
+.describeWork .description
+{
+    color: var(--text_gray_color);
+    font-weight: bold;
 }

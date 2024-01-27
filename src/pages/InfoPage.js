@@ -1,7 +1,7 @@
 import React from 'react'
 import InfoCardItem from '../components/InfoCardItem'
 import '../css/InfoPage.css'
-import { profileInfo, skillInfo } from '../data'
+import { profileInfo, skillInfo, experienceInfo } from '../data'
 
 const categories = ['web dev', 'Database', 'programming', 'ai ml']
 
@@ -50,18 +50,23 @@ function InfoPage() {
             <div className="experienceContainer">
                 <p className='minifont'><span className='glowdot'></span> Experience</p>
 
-                <div className="companiesList">
-                    <div className="companyName">
-                        <h1 className='mainfont'>Hello</h1>
-                    </div>
-                    <div className="describeWork">
-                        <h1 className='mediumfont'>Web Developer</h1>
-                        <p className='period'>24-03-24</p>
-                        <p className='description'>
-                            hello bro 
-                        </p>
-                    </div>
-                </div>
+                {
+                    experienceInfo.map((company, index) => (
+                        <div key={index} className="companiesList">
+                            <div className="companyName">
+                                <h1 className='mainfont'>{company.company}</h1>
+                            </div>
+                            <div className="describeWork">
+                                <h1 className='mediumfont'>{company.position}</h1>
+                                <p className='period minifont'>{company.interval}</p>
+                                <p className='description smallfont'>
+                                    {company.description}
+                                </p>
+                            </div>
+                        </div>
+                    ))
+
+                }
             </div>
 
         </div>
