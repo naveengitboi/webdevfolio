@@ -18,7 +18,7 @@ font-family: 'Space Grotesk', sans-serif;
 :root
 {
   /* padding */
-  --sides_padding: 4rem;
+  --sides_padding: 20vw;
   --link_padding: 0.5rem 1.25rem;
   /* colors */
   --gray_color:#252525;
@@ -41,14 +41,14 @@ font-family: 'Space Grotesk', sans-serif;
   --mini_font_size: 0.8rem;
 
   /* archivo fontfamily */
-  --archivo_large_font: 'Archivo', sans-serif;
+  --archivo_font: 'Archivo', sans-serif;
   --space_grotex: 'Space Grotesk', sans-serif;
 }
 
 .mainfont
 {
   font-size: var(--main_font_size);
-  font-family: var(--archivo_large_font);
+  font-family: var(--archivo_font);
   font-weight:500;
 }
 .mediumfont
@@ -63,6 +63,11 @@ font-family: 'Space Grotesk', sans-serif;
   font-size: var(--small_font_size);
   font-family: var(--space_grotex);
 
+}
+.minifont 
+{
+  font-size:var(--mini_font_size);
+  font-family: var(--archivo_font);
 }
 
 .linkEle

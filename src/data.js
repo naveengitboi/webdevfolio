@@ -88,28 +88,32 @@ export const projectsInfo = [
         projDescription: "I mastered React and backend tools, excelling in crafting powerful web applications with engaging interfaces",
         skillsUsed:["React JS", "Mongo DB", "Authentication", "REST API", "Routers"],
         projLink:"https://github.com/naveengitboi/youtubeclone",
-        imgUrl: '/assets/youtube.jpg'
+        imgUrl: '/assets/youtube.jpg',
+        linkType: "github"
     },
     {
         proj: "Student Learning Tracker",
         projDescription: "Creating a website to track student learning and provide essential tools, driven by the need for a personal learning journey companion.",
         skillsUsed: ["React JS","Express", "Mongo DB", "Authentication", "REST API", "Routers"],
         projLink: "https://github.com/naveengitboi/student_tracker",
-        imgUrl: '/assets/sttracker.jpg'
+        imgUrl: '/assets/sttracker.jpg',
+        linkType:"github"
     },
     {
         proj: "Basic Dept clone",
         projDescription: "Revamped a website for elegance and functionality using React JS, expanding my expertise in the framework.",
         skillsUsed: ["React JS", "Routers"],
         projLink: "https://github.com/naveengitboi/basic_dept_clone",
-        imgUrl: '/assets/basicdept.jpg'
+        imgUrl: '/assets/basicdept.jpg',
+        linkType: "github"
     },
     {
         proj: "Graphic Designfolio",
         projDescription: "Executed a design project, showcasing adept skills in Photoshop and design tools, underscoring extensive experience",
         skillsUsed: ["React JS", "Routers"],
         projLink: "https://graphicdesignerau.netlify.app/",
-        imgUrl: '/assets/gdfolio.jpg'
+        imgUrl: '/assets/gdfolio.jpg',
+        linkType: "server"
 
     },
 ]

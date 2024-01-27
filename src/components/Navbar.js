@@ -13,8 +13,8 @@ function Navbar() {
                 <li><NavLink to='/info' className='linkEle'>info</NavLink></li>
             </ul>
             <div className="socialLinks">
-                <a href="" className='linkEle'>Insta<MdArrowOutward/> </a>
-                <a href="" className='linkEle'>Resume <MdArrowOutward/></a>
+                <a href="" rel="noreferrer"  className='linkEle'>Insta<MdArrowOutward/> </a>
+                <a href="" rel="noreferrer" className='linkEle'>Resume <MdArrowOutward/></a>
             </div>
         </nav>
     )

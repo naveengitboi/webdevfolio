@@ -41,8 +41,8 @@ nav {
   padding: 0.5rem 1.25rem;
   margin: 0.5rem 0.25rem;
   backdrop-filter: blur(10px);
-  transition: all 0.25s ease;
   position: relative;
+  transition: all 0.25s ease;
 }
 .navlinks li a:hover{
     background-color: var(--gray_light_color);
@@ -78,6 +78,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+      transition: all 0.25s ease;
 }
 
 .socialLinks  a svg
