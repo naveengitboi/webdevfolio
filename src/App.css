@@ -12,6 +12,7 @@ font-family: 'Space Grotesk', sans-serif;
   padding: 0;
   box-sizing: border-box;
   color: white;
+  scroll-behavior: smooth;
 }
 
 /* default classes and styles */
@@ -114,7 +115,6 @@ body
   background-repeat: no-repeat;
   width: 100vw;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 .app 
@@ -124,8 +124,6 @@ body
 
 .cursor{
   position: fixed;
-  width: 30px;
-  height: 30px;
   mix-blend-mode: difference;
   z-index: 500000000;
   border-radius: 50%;

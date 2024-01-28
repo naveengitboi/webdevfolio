@@ -46,12 +46,12 @@
   padding: 0.15rem;
 }
 .arrowBtn a svg {
-  font-size: var(--main_font_size);
+  font-size: 1.8rem;
   transition: all 0.25s ease;
   transform-origin: 0;
 }
 .arrowBtn a:hover svg {
-  animation: rollover 0.5s ease-in-out;
+  animation: rollover 0.8s ease-in-out;
 }
 @keyframes rollover {
   0% {

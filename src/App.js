@@ -9,14 +9,35 @@ import InfoPage from './pages/InfoPage';
 function App() {
   const [cursor, setCursor] = useState({
     x: 0,
-    y: 0
+    y: 0,
+    width: 15,
+    height: 15
   })
+
   const handleCursor = (e) => {
-    setCursor({
+    setCursor((prev) => ({
+      ...prev,
       x: e.clientX,
       y: e.clientY
+    }))
+  }
+  const handleCursorSizeOnOver = (e) => {
+    setCursor({
+      x: e.clientX,
+      y: e.clientY,
+      width: 90,
+      height: 90
     })
   }
+  const handleCursorSizeOnLeave = (e) => {
+    setCursor({
+      x: e.clientX,
+      y: e.clientY,
+      width: 15,
+      height: 15
+    })
+  }
+
   const handleTextEffect = (e) => {
     const originalValue = e.target.dataset.initial
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -37,13 +58,13 @@ function App() {
 
   return (
     <div className="reactcontainer" onMouseMove={(e) => handleCursor(e)}>
-      <div className='cursor' style={{ top: cursor.y, left: cursor.x }}></div>
+      <div className='cursor' style={{ top: cursor.y, left: cursor.x, width:cursor.width, height:cursor.height }}></div>
       <Navbar textEff={handleTextEffect} />
       <div className="app">
         <Routes>
 
-          <Route path='/' element={<Home />} />
-          <Route path='/info' element={<InfoPage />} />
+          <Route path='/' element={<Home cursorSizeUpdate={handleCursorSizeOnOver} cursorLeaveUpdate={handleCursorSizeOnLeave}/>} />
+          <Route path='/info' element={<InfoPage textEff={handleTextEffect} />} />
         </Routes>
         <Footer/>
       </div>

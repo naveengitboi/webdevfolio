@@ -2,14 +2,14 @@ import React from 'react'
 import { MdOutlineArrowDownward } from "react-icons/md";
 import '../css/CardItem.css'
 import '../css/Introduction.css'
-function Introduction() {
+function Introduction(props) {
     return (
         <div className="introcontainer">
             <div className="introInnerContainer">
                 <div className='largefont intro'>
                     <p>
-                        <span>Web</span>
-                        wizard, <span>graphic </span> virtuoso, and  <span>artistic</span> soul
+                        <span onMouseOver={(e) => props.cursorsizeFunc(e)} onMouseLeave={(e) => props.cursorsizeLeaveFunc(e)} >Web</span>
+                        wizard, <span onMouseOver={(e) => props.cursorsizeFunc(e)} onMouseLeave={(e) => props.cursorsizeLeaveFunc(e)} >graphic </span> virtuoso, and  <span onMouseOver={(e) => props.cursorsizeFunc(e)} onMouseLeave={(e) => props.cursorsizeLeaveFunc(e)} >artistic</span> soul
                     </p>
                 </div>
         </div>
