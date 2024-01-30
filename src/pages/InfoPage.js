@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import InfoCardItem from '../components/InfoCardItem'
 import '../css/InfoPage.css'
 import { profileInfo, skillInfo, experienceInfo } from '../data'
 import PageNavList from '../components/PageNavList'
-
 const categories = ['web dev', 'Database', 'programming', 'ai ml']
 
 
@@ -26,11 +25,13 @@ const pageContentsList = [
 ]
 
 
+
 function InfoPage(props) {
     return (
         <div className='infoContainer'>
+            
             <PageNavList contents={pageContentsList} />
-            <div className="aboutme" id='quote'>
+            <div className="quoteContainer" id='quote'>
                 <p className='minifont heading'><span className='glowdot'></span> Quote That works for me</p>
                 <div className='mainfont pretag'>
                     <p className='quote mainfont'>karmany evadhikaras te <br />

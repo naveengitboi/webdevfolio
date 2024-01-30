@@ -1,5 +1,7 @@
 import React, {useState } from 'react'
 import '../css/InfoPage.css'
+
+
 function PageNavList(props) {
     const handleSetActive = (e) => {
         for(let item of props.contents){

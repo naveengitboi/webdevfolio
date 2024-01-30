@@ -14,10 +14,10 @@ function Footer() {
                     <div className="footerlinks">
                         <p className='minifont'>Links</p>
                         <ul className='smallfont'>
-                            <li><a href="" >Github</a></li>
-                            <li><a href="" >Leetcode</a></li>
-                            <li><a href="" >Linked In</a></li>
-                            <li><a href="" >Instagram</a></li>
+                            <li><a href="https://github.com/naveengitboi" rel="noreferrer" target='_blank'>Github</a></li>
+                            <li><a href="https://leetcode.com/naveengitboi/" rel="noreferrer" target='_blank'>Leetcode</a></li>
+                            <li><a href="https://www.linkedin.com/in/naveen-jangiti-1a1b86235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" rel="noreferrer" target='_blank' >Linked In</a></li>
+                            <li><a href="https://www.instagram.com/_atrociuos_arts/" rel="noreferrer" target='_blank'>Instagram</a></li>
                         </ul>
                     </div>
                 </div>

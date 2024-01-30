@@ -1,12 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import Lenis from '@studio-freight/lenis'
+import React from 'react'
 import './App.css';
+import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
 import Footer from './components/Footer';
-import InfoPage from './pages/InfoPage';
+import ScrollToTop from './components/ScrollToTop';
 
+const LazyHome = React.lazy(() => import('./pages/Home'))
+const LazyInfo = React.lazy(() => import('./pages/InfoPage'))
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
   const [cursor, setCursor] = useState({
     x: 0,
     y: 0,
@@ -45,31 +50,72 @@ function App() {
     let iterations = 0
     const intervalId = setInterval(() => {
       e.target.innerText = lettersArray.map((item, index) => {
-        if(index < iterations){
+        if (index < iterations) {
           return originalValue[index]
         }
-          return letters[Math.floor(Math.random() * 26)];
+        return letters[Math.floor(Math.random() * 26)];
       }).join('')
-      if (iterations >= originalValue.length){clearInterval(intervalId)}
+      if (iterations >= originalValue.length) { clearInterval(intervalId) }
       iterations += 1
-      
+
     }, 100);
   }
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 1000);
+  }, [])
+
+  
+
 
   return (
-    <div className="reactcontainer" onMouseMove={(e) => handleCursor(e)}>
-      <div className='cursor' style={{ top: cursor.y, left: cursor.x, width:cursor.width, height:cursor.height }}></div>
-      <Navbar textEff={handleTextEffect} />
-      <div className="app">
-        <Routes>
+    (
+      <div className="reactcontainer" onMouseMove={(e) => handleCursor(e)}>
+    
+         
 
-          <Route path='/' element={<Home cursorSizeUpdate={handleCursorSizeOnOver} cursorLeaveUpdate={handleCursorSizeOnLeave}/>} />
-          <Route path='/info' element={<InfoPage textEff={handleTextEffect} />} />
-        </Routes>
-        <Footer/>
+        <div className='cursor' style={{ top: cursor.y, left: cursor.x, width: cursor.width, height: cursor.height }}></div>
+
+        <Navbar textEff={handleTextEffect} />
+        {
+          isLoading ? (<Loader />) :
+            (
+              <>
+
+                <div className="app">
+                  <ScrollToTop />
+                  <Routes>
+                    
+                    <Route path='/' element={
+                      <React.Suspense fallback={(<Loader />)}>
+                        <LazyHome cursorSizeUpdate={handleCursorSizeOnOver} cursorLeaveUpdate={handleCursorSizeOnLeave} />
+                      </React.Suspense>} />
+                    <Route path='/info' element={
+                    <React.Suspense fallback={(<Loader/>)}>
+                      <LazyInfo textEff={handleTextEffect} />
+                    </React.Suspense>} />
+                  </Routes>
+                  <Footer />
+                </div>
+              </>
+            )
+        }
+
       </div>
-    </div>
-  );
-}
+    )
+  )
+};
+
 
 export default App;

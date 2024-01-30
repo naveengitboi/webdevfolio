@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 /* font-family: 'Archivo', sans-serif; 
 100;0,200;0,300;0,400;0,600;0,700
@@ -6,30 +6,30 @@ font-family: 'Space Grotesk', sans-serif;
 300;400;500;600;700
 */
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth;
+  scroll-snap-type: x proximity; */
 }
 
 /* default classes and styles */
-:root
-{
+:root {
   /* padding */
   --sides_padding: 20vw;
   --link_padding: 0.5rem 1.25rem;
   /* colors */
-  --gray_color:#252525;
-  --gray_light_color:hsl(0, 0%, 24%);
-  --gray_medium_color:#2d2d2d;
-  --black_color:#101010;
+  --gray_color: #252525;
+  --gray_light_color: hsl(0, 0%, 24%);
+  --gray_medium_color: #2d2d2d;
+  --black_color: #101010;
   /* text color */
   --text_color: #f2f2f2;
-  --text_gray_color:#808080;
-  --text_bg_light: 0px 0px 10px rgb(101, 101, 101),  0px 0px 60px var(--text_gray_color);
+  --text_gray_color: #808080;
+  --text_bg_light: 0px 0px 10px rgb(101, 101, 101),
+    0px 0px 60px var(--text_gray_color);
   /* border colors */
   --border_dark_color: #0b0b0b;
   --border_light_color: hsl(0, 0%, 18%);
@@ -38,100 +38,149 @@ font-family: 'Space Grotesk', sans-serif;
   --large_font_size: 6rem;
   --main_font_size: 1.5rem;
   --medium_font_size: 1rem;
-  --small_font_size:1rem;
+  --small_font_size: 1rem;
   --mini_font_size: 0.8rem;
 
   /* archivo fontfamily */
-  --archivo_font: 'Archivo', sans-serif;
-  --space_grotex: 'Space Grotesk', sans-serif;
+  --archivo_font: "Archivo", sans-serif;
+  --space_grotex: "Space Grotesk", sans-serif;
 }
-.largefont
-{
-    font-size: var(--large_font_size);
+.largefont {
+  font-size: var(--large_font_size);
   font-family: var(--archivo_font);
-  font-weight:bold;
+  font-weight: bold;
 }
-.mainfont
-{
+.mainfont {
   font-size: var(--main_font_size);
   font-family: var(--archivo_font);
-  font-weight:500;
+  font-weight: 500;
 }
-.mediumfont
-{
+.mediumfont {
   font-size: var(--medium_font_size);
   font-family: var(--space_grotex);
   font-weight: normal;
 }
 
-.smallfont
-{
+.smallfont {
   font-size: var(--small_font_size);
   font-family: var(--space_grotex);
-
 }
-.minifont 
-{
-  font-size:var(--mini_font_size);
+.minifont {
+  font-size: var(--mini_font_size);
   font-family: var(--archivo_font);
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.linkEle
-{
+.linkEle {
   border-radius: 1.5rem;
-
 }
 
-.linkEle:hover
-{
-  background-color:var(--gray_light_color);
+.linkEle:hover {
+  background-color: var(--gray_light_color);
 }
 
-
-
-.addblur
-{
+.addblur {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   filter: blur(2px);
 }
-a
-{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-ul li 
-{
-  list-style-type: none;;
+ul li {
+  list-style-type: none;
 }
 /* body style */
 
-body
-{
-  background-image: linear-gradient(var(--gray_color),black);
+body {
+  background-image: linear-gradient(var(--gray_color), black);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   overflow-x: hidden;
+  position: relative;
 }
 
-.app 
+
+.texture
 {
+  filter: url(#nnnoise-filter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: 99999999;
+  pointer-events: none;
+}
+
+.app {
   padding: 5rem var(--sides_padding) 2rem;
 }
 
-.cursor{
+.cursor {
   position: fixed;
   mix-blend-mode: difference;
   z-index: 500000000;
   border-radius: 50%;
   background-color: white;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   top: 0;
   left: 0;
   pointer-events: none;
+}
+
+@media screen and (max-width: 1025px) {
+  :root {
+    --sides_padding: 15vw;
+      --large_font_size: 5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 769px) {
+  :root {
+    --sides_padding: 10vw;
+      --large_font_size: 4.8rem;
+  }
+
+}
+
+
+@media screen and (max-width:426px) {
+  :root {
+  /* padding */
+  --sides_padding: 1.5rem;
+  --link_padding: 0.5rem 1rem;
+
+  /* fontfamily */
+  --large_font_size: 3rem;
+  --main_font_size: 1.3rem;
+  --medium_font_size: 0.86rem;
+  --small_font_size: 0.82rem;
+  --mini_font_size: 0.7rem;
+
+}
+}
+
+@media screen and (max-width:321px) {
+  :root {
+  /* padding */
+  --sides_padding: 1rem;
+  --link_padding: 0.5rem 1rem;
+
+  /* fontfamily */
+  --large_font_size: 2.5rem;
+  --main_font_size: 1.3rem;
+  --medium_font_size: 0.86rem;
+  --small_font_size: 0.82rem;
+  --mini_font_size: 0.7rem;
+
+}
 }
 
 

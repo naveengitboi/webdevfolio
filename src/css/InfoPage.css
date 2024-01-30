@@ -1,7 +1,6 @@
 .infoContainer {
   margin-top: 3rem;
   position: relative;
-    scroll-snap-align: center;
 }
 
 .glowdot {
@@ -13,34 +12,30 @@
   box-shadow: 0 0 10px white;
   margin-right: 0.5rem;
 }
-.aboutme
-{
-    padding: 7rem 0;
+.quoteContainer {
+  padding: 7rem 0;
 }
 
-.aboutme .heading {
+.quoteContainer .heading {
   color: var(--text_gray_color);
   margin: 0.85rem 0;
   text-transform: uppercase;
 }
-.pretag
-{
-    display: flex;
-    line-height: 1.2;
-    justify-content: space-between;
-    text-transform: uppercase;
-    align-items: baseline;
+.pretag {
+  display: flex;
+  line-height: 1.2;
+  justify-content: space-between;
+  text-transform: uppercase;
+  align-items: baseline;
 }
-.quote
-{
-    color: white;
-    padding: 0 .5rem;
+.quote {
+  color: white;
+  padding: 0 0.5rem;
 }
-.translate
-{
-    width: 40%;
-    margin: 0;
-    color: var(--text_gray_color);
+.translate {
+  width: 40%;
+  margin: 0;
+  color: var(--text_gray_color);
 }
 
 /* profile grid */
@@ -60,7 +55,6 @@
 }
 .imageCardContainer {
   --borderRadi: 1rem;
-
   padding: 0.5rem;
   border-radius: var(--borderRadi);
   background: linear-gradient(var(--gray_color), rgba(0, 0, 0, 0.26))
@@ -97,7 +91,6 @@
 /* skills container */
 .skillsContainer {
   padding: 7rem 0;
-
   border-top: 2px solid var(--border_light_color);
 }
 .skillsContainer > p {
@@ -120,16 +113,14 @@
   padding: 0.45rem 0;
   text-transform: uppercase;
 }
-.skillsCard .skillNames li:hover
-{
-    color: var(--text_gray_color);
+.skillsCard .skillNames li:hover {
+  color: var(--text_gray_color);
 }
 
 /* cexperienceContainer */
-.experienceContainer
-{
- padding: 7rem 0;
-   border-top: 1px solid var(--border_light_color);
+.experienceContainer {
+  padding: 7rem 0;
+  border-top: 1px solid var(--border_light_color);
 }
 .experienceContainer > p {
   color: var(--text_gray_color);
@@ -170,9 +161,8 @@
   filter: contrast(0.3);
   transition: all 0.5s ease;
 }
-.pageNavList:hover
-{
-    filter: contrast(1);
+.pageNavList:hover {
+  filter: contrast(1);
 }
 .pageNavList p {
   padding: 1rem 1.5rem;
@@ -185,9 +175,82 @@
   display: inline-block;
   padding: 0.5rem 1.5rem;
   color: var(--text_gray_color);
-scroll-snap-type: y mandatory;
 }
-.pagelinks .activeSection
-{
-    color: rgb(255, 255, 255);
+.pagelinks .activeSection {
+  color: rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 1025px) {
+  .experienceContainer {
+    padding: 6rem 0;
+  }
+
+  .pageNavList {
+    position: fixed;
+    top: 20vh;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .experienceContainer {
+    padding: 4rem 0;
+  }
+
+  .pageNavList {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .quoteContainer {
+    padding: 3rem 0;
+  }
+  .quote {
+    color: white;
+    padding: 0;
+  }
+  .pretag {
+    flex-direction: column;
+  }
+  .translate {
+    padding: 0.85rem 0;
+    width: 100%;
+  }
+
+  .infoGrid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 0;
+    gap: 40px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .infoGrid::-webkit-scrollbar {
+    display: none;
+  }
+  .profileInfo {
+    padding: 1rem 0rem;
+  }
+
+  /* skills */
+  .skillsContainer, .experienceContainer {
+    padding: 6rem 0 3rem;
+  }
+  .skillCards
+  {
+    flex-wrap: wrap;
+  }
+
+  /* experience */
+  .experienceContainer > p 
+  {
+    padding: 1rem 0;
+  }
+  .companiesList
+  {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+}
+
+
