@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { MdArrowOutward } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -6,7 +6,6 @@ import '../css/Navbar.css'
 function Navbar(props) {
     const { textEff } = props;
     const [ham, setHam] = useState(false)
-    const hamRef = useRef()
     const handleHamBurger = () => {
         setHam((prev) => !prev)
 
@@ -25,7 +24,7 @@ function Navbar(props) {
                 <a href="https://www.instagram.com/_atrociuos_arts/" rel="noreferrer" target='_blank' className='linkEle'  >Insta<MdArrowOutward /> </a>
                 <a href="/assets/resume.pdf" rel="noreferrer" target='_blank' className='linkEle'>Resume <MdArrowOutward /></a>
             </div>
-            <div className="hamburgerMenu" ref={hamRef}>
+            <div className="hamburgerMenu">
                 <RxHamburgerMenu onClick={handleHamBurger} />
             </div>
 
@@ -36,7 +35,7 @@ function Navbar(props) {
                 <li><a href="/assets/resume.pdf" rel="noreferrer" target='_blank' className='linkEle'>Resume <MdArrowOutward /></a></li>
 
             </ul>
-            <div className="glossyEffect"></div>
+            {/* <div className="glossyEffect"></div> */}
 
         </nav>
     )

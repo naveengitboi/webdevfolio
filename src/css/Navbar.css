@@ -7,7 +7,8 @@ nav {
   width: 100vw;
   font-family: var(--space_grotex);
   z-index: 1000;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
+  /* border: 2px solid red; */
 }
 .logo {
   font-weight: bold;
@@ -81,13 +82,14 @@ nav {
 .socialLinks a:hover svg {
   transform: translate(2px, -2px);
 }
-.hamburgerMenu {
+.hamburgerMenu, .mobileNavlinks {
   display: none;
 }
 @media screen and (max-width: 426px) {
   .navbar 
   {
     background: linear-gradient(black, rgba(0, 0, 0, 0));
+    backdrop-filter: none;
   }
   .navbar > .navlinks,
   .navbar > .socialLinks {
