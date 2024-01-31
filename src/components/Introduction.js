@@ -13,7 +13,7 @@ function Introduction(props) {
                     <span className='green'></span>
                 </div>
                 <div className='leftIconHeader'>
-                    <IoIosGitCompare/>
+                    <IoIosGitCompare />
                 </div>
             </div>
             <div className="introInnerContainer">

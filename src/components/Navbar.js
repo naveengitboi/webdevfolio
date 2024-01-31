@@ -12,8 +12,6 @@ function Navbar(props) {
 
     }
 
-
-
     return (
         <nav className='navbar' >
             <div className="logo" data-initial="JNAVEEN" onMouseOver={(e) => textEff(e)}>
@@ -29,18 +27,17 @@ function Navbar(props) {
             </div>
             <div className="hamburgerMenu" ref={hamRef}>
                 <RxHamburgerMenu onClick={handleHamBurger} />
-                <div className={ham ? "mobileLinks mobileLinksActive" : "mobileLinks"}>
-                    <ul className='navlinks'>
-                        <li><NavLink to='/' className='linkEle '>Work</NavLink></li>
-                        <li><NavLink to='/info' className='linkEle'>info</NavLink></li>
-
-
-                        <li><a href="https://www.instagram.com/_atrociuos_arts/" rel="noreferrer" target='_blank' className='linkEle'  >Insta<MdArrowOutward /> </a></li>
-                        <li><a href="/assets/resume.pdf" rel="noreferrer" target='_blank' className='linkEle'>Resume <MdArrowOutward /></a></li>
-
-                    </ul>
-                </div>
             </div>
+
+            <ul className={ham ? "mobileNavlinks mobileLinksActive" : "mobileNavlinks"}>
+                <li><NavLink to='/' className='linkEle '>Work</NavLink></li>
+                <li><NavLink to='/info' className='linkEle'>info</NavLink></li>
+                <li><a href="https://www.instagram.com/_atrociuos_arts/" rel="noreferrer" target='_blank' className='linkEle'  >Insta<MdArrowOutward /> </a></li>
+                <li><a href="/assets/resume.pdf" rel="noreferrer" target='_blank' className='linkEle'>Resume <MdArrowOutward /></a></li>
+
+            </ul>
+            <div className="glossyEffect"></div>
+
         </nav>
     )
 }
