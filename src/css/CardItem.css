@@ -29,6 +29,10 @@
   border: 0.1px solid transparent;
   border-radius: var(--border_radius);
 }
+.innerContainer:hover
+{
+    cursor: none;
+}
 .topContent {
   display: flex;
   align-items: baseline;

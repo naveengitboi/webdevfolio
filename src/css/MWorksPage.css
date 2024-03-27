@@ -1,0 +1,37 @@
+.moreWorksPage {
+  padding: 25vh 0;
+}
+
+.mwProjLinkContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+.mwProjContent .medLargeFont {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.mwProjContent .medLargeFont span {
+  display: inline-block;
+}
+.mwProjContent .smallfont {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.mwProjLinkContainer img {
+  position: absolute;
+  width: 250px;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+
+  right: 0;
+  transform: translateY(-50px);
+}

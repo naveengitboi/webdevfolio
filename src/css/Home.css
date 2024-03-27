@@ -1,0 +1,81 @@
+.moreWorks {
+  --brad: 0.95rem;
+  overflow-x: hidden;
+}
+.moreWorks .tabHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.5rem;
+  border-top-left-radius: var(--brad);
+  border-top-right-radius: var(--brad);
+  width: 300px;
+  background-color: var(--gray_light_color);
+}
+
+.moreWorksMainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray_light_color);
+  border-radius: 0 var(--brad) var(--brad);
+  padding: 2rem 0;
+}
+.attenstionScroller {
+  width: max-content;
+  animation: scrollLeft 10s infinite linear;
+  border: 3px solid #f4bd4e;
+}
+@keyframes scrollLeft {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.attenstionScroller p {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  text-shadow: #f4bd4e 1px 0px 10px;
+  color: #ffdf9e;
+  text-transform: uppercase;
+}
+.moreWorks .mwDetailsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5rem 2.5rem;
+}
+
+.attenstionScroller {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.mwDetailsContainer .medLargeFont {
+  width: 70%;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.mwDetailsContainer .medLargeFont span {
+  display: inline-flex;
+  font-weight: 600;
+  color: #ffdf9e;
+  text-transform: uppercase;
+}
+.mwDetailsContainer .moreWorksLink {
+  color: var(--gray_color);
+  background-color: var(--text_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.5rem;
+  text-transform: uppercase;
+  border-radius: var(--brad);
+}
+
+.moreWorksLink svg {
+  font-size: 40px;
+  fill: var(--gray_color);
+  display: inline-block;
+  margin-left: 0.35rem;
+}
