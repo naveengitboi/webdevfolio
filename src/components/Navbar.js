@@ -11,18 +11,6 @@ function Navbar(props) {
     setHam((prev) => !prev);
   };  
   const navref = useRef()
-  useEffect(() => {
-   const handler = (e) => {
-    if(!navref.current.contains(e.target)){
-      console.log(e.target)
-      setHam((prev) => false)
-    }false
-    }
-
-    document.addEventListener('click', handler)
-
-    return document.removeEventListener('click', handler, )
-  }, [ham])
   
   return (
     <nav className="navbar">
