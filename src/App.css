@@ -103,10 +103,8 @@ body {
   position: relative;
 }
 
-
-.texture
-{
-  filter: url(#nnnoise-filter);
+.texture {
+  /*filter: url(#nnnoise-filter);*/
   position: absolute;
   left: 0;
   top: 0;
@@ -136,51 +134,50 @@ body {
 @media screen and (max-width: 1025px) {
   :root {
     --sides_padding: 15vw;
-      --large_font_size: 5rem;
+    --large_font_size: 5rem;
   }
-
 }
-
 
 @media screen and (max-width: 769px) {
   :root {
     --sides_padding: 10vw;
-      --large_font_size: 4.8rem;
+    --large_font_size: 4.8rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  :root {
+    /* padding */
+    --sides_padding: 1.5rem;
+    --link_padding: 0.5rem 1rem;
+
+    /* fontfamily */
+    --large_font_size: 3rem;
+    --main_font_size: 1.3rem;
+    --medium_font_size: 0.86rem;
+    --small_font_size: 0.82rem;
+    --mini_font_size: 0.7rem;
   }
 
+.cursor {
+  display:none;
+  pointer-events: none;
 }
 
 
-@media screen and (max-width:426px) {
+}
+
+@media screen and (max-width: 321px) {
   :root {
-  /* padding */
-  --sides_padding: 1.5rem;
-  --link_padding: 0.5rem 1rem;
+    /* padding */
+    --sides_padding: 1rem;
+    --link_padding: 0.5rem 1rem;
 
-  /* fontfamily */
-  --large_font_size: 3rem;
-  --main_font_size: 1.3rem;
-  --medium_font_size: 0.86rem;
-  --small_font_size: 0.82rem;
-  --mini_font_size: 0.7rem;
-
+    /* fontfamily */
+    --large_font_size: 2.5rem;
+    --main_font_size: 1.3rem;
+    --medium_font_size: 0.86rem;
+    --small_font_size: 0.82rem;
+    --mini_font_size: 0.7rem;
+  }
 }
-}
-
-@media screen and (max-width:321px) {
-  :root {
-  /* padding */
-  --sides_padding: 1rem;
-  --link_padding: 0.5rem 1rem;
-
-  /* fontfamily */
-  --large_font_size: 2.5rem;
-  --main_font_size: 1.3rem;
-  --medium_font_size: 0.86rem;
-  --small_font_size: 0.82rem;
-  --mini_font_size: 0.7rem;
-
-}
-}
-
-
