@@ -92,7 +92,7 @@ function Navbar(props) {
           target="_blank"
           className="linkEle"
         >
-          Insta
+          Insta 
           <MdArrowOutward />{" "}
         </a>
       </li>
