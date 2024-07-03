@@ -1,0 +1,21 @@
+
+.PICWrapper
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+
+
+}
+
+.PICDetails
+{
+  border: 1px solid #f4bd4e;
+}
+
+.PICOverview{
+  border: 1px solid #f4bd4e;
+}
+
+
