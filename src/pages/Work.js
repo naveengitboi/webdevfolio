@@ -4,10 +4,10 @@ import { projectsInfo } from '../data'
 import { Link } from 'react-router-dom'
 function Work() {
   return (
-    <div className='workContainer'>
+    <div classname='workcontainer'>
       {
         projectsInfo.map((proj, index) => (
-          <Link key={index} to='/hello'>
+          <Link key={index} to={`/project/${proj.proj}`}>
             <CardItem content={proj} />
           </Link>
         ))

@@ -134,40 +134,66 @@ export const projectsInfo = [
         linkType: "server"
 
     },
-]
 
-export const moreProjects = [
+
     {
-        proj: "Youtube Clone",
-        projDescription: "I mastered React and backend tools, excelling in crafting powerful web applications with engaging interfaces",
-        skillsUsed: ["React JS", "Mongo DB", "Authentication", "REST API", "Routers"],
-        projLink: "https://github.com/naveengitboi/youtubeclone",
-        imgUrl: '/assets/youtube.jpg',
-        linkType: "github"
-    },
-    {
-        proj: "Student Learning Tracker",
-        projDescription: "Creating a website to track student learning and provide essential tools, driven by the need for a personal learning journey companion.",
-        skillsUsed: ["React JS", "Express", "Mongo DB", "Authentication", "REST API", "Routers"],
-        projLink: "https://github.com/naveengitboi/student_tracker",
-        imgUrl: '/assets/sttracker.jpg',
-        linkType: "github"
-    },
-    {
-        proj: "Basic Dept clone",
+        proj: "Wallet Manager",
         projDescription: "Revamped a website for elegance and functionality using React JS, expanding my expertise in the framework.",
         skillsUsed: ["React JS", "Routers"],
         projLink: "https://github.com/naveengitboi/basic_dept_clone",
         imgUrl: '/assets/basicdept.jpg',
-        linkType: "github"
-    },
-    {
-        proj: "Graphic Designfolio",
-        projDescription: "Executed a design project, showcasing adept skills in Photoshop and design tools, underscoring extensive experience",
-        skillsUsed: ["React JS", "Routers"],
-        projLink: "https://graphicdesignerau.netlify.app/",
-        imgUrl: '/assets/gdfolio.jpg',
-        linkType: "server"
+        linkType: "github",
+        moreAboutProject: {
+      role: {
+        type: 'Developer',
+        context: 'Feature Scoping, Research and Devloping'
 
+      },
+      isTeam: false,
+      team: ['Naveen, Frontend Dev', 'Purnima, Backend Devloper', 'AmmaNana, UI'],
+      timeline: '1+Month',
+      completed:false,
+      progress: 'currently woriking on Charts and analytics',
+      overview: [
+          "Test on Hub was a campanion web app originally built to be used by stadia game and we are taking over it", 
+        "I owned and lead design stategy for the futer of the Test Hub in support of Stadia's B2B pivot- playing a critical role in scoping and prototyping the game", "Test Hub Next's Vision was highly praised by key stake holder but was unfortunately, sunste along side..."
+
+      ],
+      summary: {
+          workflow: {
+              heading: 'WorkFlow of wallet Manger Project', 
+              content: 'It was critical to find and place elements in dashboard and process to futher continue work',
+          images : ['/assets/basicdept.jpg', '/assets/basicdept.jpg']
+        },
+        fixedStyles: {
+          heading: 'Common Styles', 
+          content: 'Different contents and fonts used',
+          images: ['/assets/basicdept.jpg']
+        },
+        highlights : [
+          {
+            heading: 'Notifications and Transaction History', 
+            content: 'Seamlessly integrated notifications in website and transaction that user has done earlier are stored and can be downloaded as pdf...',
+            himage: '/assets/basicdept.jpg'
+          },
+          {
+            heading: 'Payments and Dashboards', 
+            content: 'Addeding so and so',
+            himage: '/assets/basicdept.jpg'
+          },
+          {
+          heading: 'Payments and Dashboards', 
+            content: 'Addeding so and so',
+            himage: '/assets/basicdept.jpg'
+          }
+        ]
+      }
+      
+
+    }
     },
+]
+
+export const moreProjects = [
+    
 ]
