@@ -10,59 +10,39 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import Cursor from "./cursorTypes/Cursor";
 import MoreWorks from "./pages/MoreWorks";
-const LazyHome = React.lazy(() => import("./pages/Home"));
-const LazyInfo = React.lazy(() => import("./pages/InfoPage"));
+  const LazyHome = React.lazy(() => import("./pages/Home"));
+  const LazyInfo = React.lazy(() => import("./pages/InfoPage"));
 
-function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  function App() {
+    const [isLoading, setIsLoading] = useState(true);
 
-  const handleTextEffect = (e) => {
-    const originalValue = e.target.dataset.initial;
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const lettersArray = e.target.innerText.split("");
-    let iterations = 0;
-    const intervalId = setInterval(() => {
-      e.target.innerText = lettersArray
-        .map((item, index) => {
-          if (index < iterations) {
-            return originalValue[index];
-          }
-          return letters[Math.floor(Math.random() * 26)];
-        })
-        .join("");
-      if (iterations >= originalValue.length) {
-        clearInterval(intervalId);
+
+    useEffect(() => {
+      const lenis = new Lenis();
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
       }
-      iterations += 1;
-    }, 100);
-  };
 
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time) {
-      lenis.raf(time);
       requestAnimationFrame(raf);
-    }
 
-    requestAnimationFrame(raf);
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+    }, []);
 
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-  }, []);
+    return (
+      <div className="reactcontainer" >
+        <Cursor/>
 
-  return (
-    <div className="reactcontainer" >
-      <Cursor/>
-
-      <svg
-        className="texture"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        xmlnsSvgjs="http://svgjs.dev/svgjs"
-      >
+        <svg
+          className="texture"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          xmlnsSvgjs="http://svgjs.dev/svgjs"
+        >
         <defs>
           <filter
             id="nnnoise-filter"
@@ -95,32 +75,32 @@ function App() {
             </feSpecularLighting>
           </filter>
         </defs>
-        <rect fill="#0e0e0eff"></rect>
-        <rect fill="##0e0e0eff" filter="url(#nnnoise-filter)"></rect>
-      </svg>
+          <rect fill="#0e0e0eff"></rect>
+          <rect fill="##0e0e0eff" filter="url(#nnnoise-filter)"></rect>
+        </svg>
 
 
-      <Navbar textEff={handleTextEffect} />
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <div className="app">
-            <ScrollToTop />
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <React.Suspense fallback={<Loader />}>
-                    <LazyHome/>
-                  </React.Suspense>
-                }
-              />
-              <Route
+        <Navbar/>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>
+            <div className="app">
+              <ScrollToTop />
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <React.Suspense fallback={<Loader />}>
+                      <LazyHome/>
+                    </React.Suspense>
+                  }
+                />
+                <Route
                 path="/info"
                 element={
                   <React.Suspense fallback={<Loader />}>
-                    <LazyInfo textEff={handleTextEffect} />
+                    <LazyInfo />
                   </React.Suspense>
                 }
               />

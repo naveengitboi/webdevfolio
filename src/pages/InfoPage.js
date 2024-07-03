@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React   from 'react'
 import InfoCardItem from '../components/InfoCardItem'
 import '../css/InfoPage.css'
 import { profileInfo, skillInfo, experienceInfo } from '../data'
 import PageNavList from '../components/PageNavList'
+import TextEffect from '../customHooks/useTextEffect.js'
 const categories = ['web dev', 'Database', 'programming', 'ai ml']
-
 
 const pageContentsList = [
     {
@@ -86,7 +86,7 @@ function InfoPage(props) {
                     experienceInfo.map((company, index) => (
                         <div key={index} className="companiesList">
                             <div className="companyName">
-                                <h1 className='mainfont' onMouseOver={(e) => props.textEff(e)} data-initial={company.company} >{company.company}</h1>
+                                <h1 className='mainfont' onMouseOver={(e) =>TextEffect(e) } data-initial={company.company} >{company.company}</h1>
                             </div>
                             <div className="describeWork">
                                 <h1 className='mediumfont'>{company.position}</h1>

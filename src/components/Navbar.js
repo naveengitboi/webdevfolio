@@ -1,11 +1,11 @@
-import React, { useState , useEffect, useRef} from "react";
+import React, { useState ,  useRef} from "react";
 import { NavLink } from "react-router-dom";
-import {MdArrowCross, MdArrowOutward } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TiPointOfInterest } from "react-icons/ti";
 import "../css/Navbar.css";
+import TextEffect  from '../customHooks/useTextEffect.js'
 function Navbar(props) {
-  const { textEff } = props;
   const [ham, setHam] = useState(false);
   const handleHamBurger = () => {
     setHam((prev) => !prev);
@@ -17,7 +17,7 @@ function Navbar(props) {
       <div
         className="logo"
         data-initial="JNAVEEN"
-        onMouseOver={(e) => textEff(e)}
+        onMouseOver={(e) => TextEffect(e)}
       >
         JNAVEEN
       </div>
