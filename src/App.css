@@ -107,7 +107,7 @@ body {
 }
 
 .texture {
-  filter: url(#nnnoise-filter);
+  /*filter: url(#nnnoise-filter);*/
   position: absolute;
   left: 0;
   top: 0;
@@ -167,6 +167,13 @@ body {
     --small_font_size: 0.82rem;
     --mini_font_size: 0.7rem;
   }
+
+.cursor {
+  display:none;
+  pointer-events: none;
+}
+
+
 }
 
 @media screen and (max-width: 321px) {
