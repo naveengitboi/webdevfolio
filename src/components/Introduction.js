@@ -3,15 +3,12 @@ import { MdOutlineArrowDownward } from "react-icons/md";
 import '../css/CardItem.css'
 import '../css/Introduction.css'
 import { IoIosGitCompare } from "react-icons/io";
-function Introduction(props) {
+import ThreeDots from './ThreeDots';
+function Introduction() {
     return (
         <div className="introcontainer">
             <div className="introHeader">
-                <div className="dots">
-                    <span className='red'></span>
-                    <span className='orange'></span>
-                    <span className='green'></span>
-                </div>
+                <ThreeDots />
                 <div className='leftIconHeader'>
                     <IoIosGitCompare />
                 </div>
@@ -19,8 +16,8 @@ function Introduction(props) {
             <div className="introInnerContainer">
                 <div className='largefont intro'>
                     <p>
-                        <span onMouseOver={(e) => props.cursorsizeFunc(e)} onMouseLeave={(e) => props.cursorsizeLeaveFunc(e)} >Web</span>
-                        wizard, <span onMouseOver={(e) => props.cursorsizeFunc(e)} onMouseLeave={(e) => props.cursorsizeLeaveFunc(e)} >graphic </span> virtuoso, and  <span onMouseOver={(e) => props.cursorsizeFunc(e)} onMouseLeave={(e) => props.cursorsizeLeaveFunc(e)} >artistic</span> soul
+                        <span >Web</span>
+                        wizard, <span>graphic </span> virtuoso, and  <span>artistic</span> soul
                     </p>
                 </div>
 
