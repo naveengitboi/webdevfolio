@@ -1,56 +1,89 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import '../css/PIContainer.css';
-
+import { useParams } from "react-router-dom";
+import { projectsInfo } from '../data'
+import { GreenDot, OrangeDot } from './ThreeDots'
 const ProjectInfoContainer = () => {
+  const [loaded, setLoaded] = useState(false);
+  const [pDetails, setProjectDetails] = useState({});
+  const params = useParams()
+  const project = params.proj
+  useEffect(() => {
+
+    projectsInfo.filter((projectItem) => {
+      if (projectItem.proj === project) {
+        setProjectDetails(projectItem);
+        setLoaded(true)
+        return projectItem;
+
+      }
+    })
+  })
+
+  const work = pDetails.moreAboutProject
   return (
     <>
-      <div className="PICWrapper">
-        <div className="PICDetails">
-          <div className="PICSection">
-            <p className="mainfont">My Role</p>
-            <p className="mediumfont">Frontend Developer</p>
+      {loaded &&
+        <div className="PICWrapper">
+          <div className="PICDetails">
+            <div className="PICSection">
+              <p className="mediumfont highlightContent">My Role</p>
+              <p className="mediumfont"><span className="highlightContent">{work.role.type} </span> {work.role.context}</p>
+            </div>
+            <div className="PICSection">
+              <p className="mediumfont highlightContent">Team</p>
+
+              {
+                work.isTeam && (
+
+                  <div className="teamContainer">
+                    {
+                      work.team.map((mate, idx) => {
+                        return (
+                          <div key={idx} className="mediumfont teamMember">
+                            <p>{mate.teamate}  -- {mate.twork}</p>
+                          </div>
+
+                        )
+                      })
+                    }
+                  </div>
+                )
+              }
+              {
+                !work.isTeam && (
+
+                  <div className='mediumfont'>{work.team}</div>
+                )
+              }
+            </div>{" "}
+
+            <div className="PICSection">
+              <p className="mediumfont highlightContent">Timeline</p>
+              <p className="mediumfont">{work.timeline}</p>
+            </div>{" "}
           </div>
-          <div className="PICSection">
-            <p className="mainfont">Team</p>
+          <div className="PICOverview ">
+            <div className="PICSection">
+              <p className="mediumfont  highlightContent">Overview</p>
+              {
+                work.overview.map((para, idx) => {
+                  return (
+                    <p key={idx} className="workOverview mediumfont">
+                      {para}
+                    </p>
 
-            {
-              true && (
-                <div className="teamContainer">
-                  <div className="mediumfont teamMember">
-                    <img src="" alt="member" />
-                    <p>Member 1</p>
-                  </div>
-                  <div className="mediumfont teamMember">
-                    <img src="" alt="member" />
-                    <p>Member 2</p>
-                  </div>
-                  <div className="teamMember mediumfont">
-                    <img src="" alt="member" />
-                    <p>Member 3</p>
-                  </div>
-                </div>
-              )
-            }
-            {
-              false && (
-                <div className='mediumfont'>Individual Own Project</div>
-              )
-            }
-          </div>{" "}
-
-          <div className="PICSection">
-            <p className="mainfont">Timeline</p>
-            <p className="mediumfont">2Months </p>
-          </div>{" "}
-        </div>
-        <div className="PICOverview">
-          <p className="mainfont">Overview</p>
-          <p className="mediumfont">
-            Test hub waas companion web app originally build to be used to
-            stadia game
-          </p>
-        </div>
-      </div >
+                  )
+                })
+              }
+            </div>
+            <div className="PICSection">
+              <p className="mediumfont highlightContent statusChecker">Status {work.completed ? (<GreenDot />) : (<OrangeDot />)} </p>
+              <p className="mediumfont">{work.progress}</p>
+            </div>
+          </div>
+        </div >
+      }
     </>
   );
 };

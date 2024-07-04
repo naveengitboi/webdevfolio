@@ -40,7 +40,7 @@ function App() {
         <Loader />
       ) : (
         <>
-          <div className="app defaultPadding">
+          <div className="app">
             <ScrollToTop />
             <Routes>
               <Route

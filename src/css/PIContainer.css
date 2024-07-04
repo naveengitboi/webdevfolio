@@ -1,28 +1,63 @@
 
 .PICWrapper
 {
-  width:100%;
+  --lineH: 1.5;
+  width:100vw;
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   padding: 1rem;
-  border:2px solid red;
+  padding: 5rem 12vw;
+  margin:0;
 }
 
-.PICWrapper .mediumfont, .PICSection .mediumfont
-{
-  color: var(--text_gray_color);
-}
 
 .PICDetails
 {
-  border: 1px solid #f4bd4e;
+  padding:1rem ;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+
+  
+}
+.PICSection .teamContainer .mediumfont p
+{
+  color:var(--text_gray_color);
+  line-height:var(--lineH);
+}
+.PICOverview .workOverview{
+  margin-bottom: 0.89rem;
+}
+.PICSection{
+  margin: 1rem 0 3rem;
+  text-align:left;
+  line-height:var(--lineH);
 }
 
-.PICOverview{
-  border: 1px solid #f4bd4e;
+
+.PICSection .mediumfont{
+  color:var(--text_gray_color);
 }
 
+.PICOverview 
+{
+  padding: 1rem;
+  line-height: var(--lineH);
+ display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
 
 
+}
 
+.PICSection .highlightContent{
+  color:var(--text_color);
+}
+
+.statusChecker
+{
+  display:flex;
+  align-items:center;
+  gap: 20px; 
+}

@@ -124,7 +124,6 @@ body {
 .defaultPadding{
   padding-left:var(--sides_padding);
   padding-right:var(--sides_padding);
-
 }
 
 .cursor {
