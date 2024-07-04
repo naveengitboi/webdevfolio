@@ -119,7 +119,12 @@ body {
 }
 
 .app {
-  padding: 5rem var(--sides_padding) 2rem;
+  padding-top: 5rem;
+}
+.defaultPadding{
+  padding-left:var(--sides_padding);
+  padding-right:var(--sides_padding);
+
 }
 
 .cursor {

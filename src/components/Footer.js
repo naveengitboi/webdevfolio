@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/Footer.css'
 function Footer() {
     return (
-        <div className='footerContainer'>
+        <div className='defaultPadding footerContainer'>
             <div className="horizontalline"></div>
             <div className="footerContent">
                 <div className="leftContent">

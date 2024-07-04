@@ -1,12 +1,17 @@
 
 .PICWrapper
 {
+  width:100%;
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   padding: 1rem;
+  border:2px solid red;
+}
 
-
+.PICWrapper .mediumfont, .PICSection .mediumfont
+{
+  color: var(--text_gray_color);
 }
 
 .PICDetails
@@ -17,5 +22,7 @@
 .PICOverview{
   border: 1px solid #f4bd4e;
 }
+
+
 
 
