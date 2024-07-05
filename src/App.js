@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Cursor from "./cursorTypes/Cursor";
 import MoreWorks from "./pages/MoreWorks";
-import ProjectInfoContainer from "./components/ProjectInfoContainer";
+import AboutProject from "./pages/AboutProject";
 const LazyHome = React.lazy(() => import("./pages/Home"));
 const LazyInfo = React.lazy(() => import("./pages/InfoPage"));
 
@@ -40,7 +40,7 @@ function App() {
         <Loader />
       ) : (
         <>
-          <div className="app">
+          <div className="app defaultPadding">
             <ScrollToTop />
             <Routes>
               <Route
@@ -60,7 +60,7 @@ function App() {
                 }
               />
               <Route path="/moreworks" element={<MoreWorks />} />
-              <Route path="/project/:proj" element={<ProjectInfoContainer />} />
+              <Route path="/project/:proj" element={< AboutProject />} />
             </Routes>
             <Footer />
           </div>

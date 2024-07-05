@@ -3,24 +3,8 @@ import '../css/PIContainer.css';
 import { useParams } from "react-router-dom";
 import { projectsInfo } from '../data'
 import { GreenDot, OrangeDot } from './ThreeDots'
-const ProjectInfoContainer = () => {
-  const [loaded, setLoaded] = useState(false);
-  const [pDetails, setProjectDetails] = useState({});
-  const params = useParams()
-  const project = params.proj
-  useEffect(() => {
-
-    projectsInfo.filter((projectItem) => {
-      if (projectItem.proj === project) {
-        setProjectDetails(projectItem);
-        setLoaded(true)
-        return projectItem;
-
-      }
-    })
-  })
-
-  const work = pDetails.moreAboutProject
+const ProjectInfoContainer = (props) => {
+  const { loaded, work } = props
   return (
     <>
       {loaded &&
@@ -53,7 +37,7 @@ const ProjectInfoContainer = () => {
               {
                 !work.isTeam && (
 
-                  <div className='mediumfont'>{work.team}</div>
+                  <div className='mediumfont'>{work.own}</div>
                 )
               }
             </div>{" "}

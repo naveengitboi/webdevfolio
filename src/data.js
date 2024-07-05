@@ -22,63 +22,33 @@ export const profileInfo = [
 
 export const skillInfo = [
   {
-    skill: "react js",
-    category: "web dev"
+    category: 'Web Dev',
+    stuff: ['react js', 'node js', 'express js', 'mongodb']
   },
+
+
   {
-    skill: "node js",
-    category: "web dev"
-  },
-  {
-    skill: "express js",
-    category: "web dev"
-  }, {
-    skill: "mongo db",
-    category: "web dev"
+    category: 'Database',
+    stuff: ['SQLite3', 'mongodb', 'firebase']
   },
 
   {
-    skill: "mongo db",
-    category: "Database"
-  },
-  {
-    skill: "Sqlite3",
-    category: "Database"
+    category: 'Programming',
+    stuff: ['DSA', 'Python', 'C++(intermediate)', 'JavaScript', 'C', 'OOPs']
   },
 
   {
-    skill: "js",
-    category: "programming"
+    category: 'AI/ML(Beginner)',
+    stuff: ['Numpy', 'Pandas', 'Matplotlib', 'SkLearn']
   },
   {
-    skill: "python (DSA)",
-    category: "programming"
+    category: 'Interest',
+    stuff: ['Next JS', 'THREE JS', 'Web Dev + AI']
   },
   {
-    skill: "c++(intermediate)",
-    category: "programming"
-  },
-  {
-    skill: "OOPs",
-    category: "programming"
-  },
-
-  {
-    skill: "Numpy",
-    category: "ai ml"
-  },
-
-  {
-    skill: "pandas",
-    category: "ai ml"
-  }, {
-    skill: "Matplotlib",
-    category: "ai ml"
-  },
-  {
-    skill: "scikit learn",
-    category: "ai ml"
-  },
+    category: 'IDE',
+    stuff: ['VSCode', 'NeoVim(+1Month)']
+  }
 
 ]
 
@@ -149,7 +119,7 @@ export const projectsInfo = [
         context: 'Feature Scoping, Research and Devloping'
 
       },
-      isTeam: true,
+      isTeam: false,
       team: [{
         teamate: 'Naveen',
         twork: 'Frontend Developer'
@@ -161,6 +131,7 @@ export const projectsInfo = [
         teamate: 'Naveen',
         twork: 'Frontend Developer'
       }],
+      own: 'Worked on it from scratch, learning different languages.',
       timeline: '1+Month',
       completed: false,
       progress: 'currently woriking on Charts and analytics',

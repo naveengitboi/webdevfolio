@@ -4,7 +4,7 @@ import '../css/InfoPage.css'
 import { profileInfo, skillInfo, experienceInfo } from '../data'
 import PageNavList from '../components/PageNavList'
 import TextEffect from '../customHooks/useTextEffect.js'
-const categories = ['web dev', 'Database', 'programming', 'ai ml']
+import SkillsItem from '../components/SkillsItem'
 
 const pageContentsList = [
   {
@@ -28,7 +28,7 @@ const pageContentsList = [
 
 function InfoPage(props) {
   return (
-    <div className='infoContainer defaultPadding'>
+    <div className='infoContainer'>
 
       <PageNavList contents={pageContentsList} />
       <div className="quoteContainer" id='quote'>
@@ -58,21 +58,9 @@ function InfoPage(props) {
         <p className='minifont'><span className='glowdot'></span> SKILLS</p>
         <div className="skillCards">
           {
-            categories.map((cate, index) => {
-              const filtered = skillInfo.filter((item) => {
-                return item.category === cate
-              })
+            skillInfo.map((eachSkill, idx) => {
               return (
-                <div key={index} className="skillsCard">
-                  <p className='minifont'>{cate}</p>
-                  <ul className="skillNames smallfont">
-                    {
-                      filtered.map((skillName, i) => (
-                        <li key={i}>{skillName.skill}</li>
-                      ))
-                    }
-                  </ul>
-                </div>
+                <SkillsItem key={idx} category={eachSkill.category} skills={eachSkill.stuff} />
               )
             })
           }

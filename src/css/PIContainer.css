@@ -2,12 +2,10 @@
 .PICWrapper
 {
   --lineH: 1.5;
-  width:100vw;
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   padding: 1rem;
-  padding: 5rem 12vw;
   margin:0;
 }
 

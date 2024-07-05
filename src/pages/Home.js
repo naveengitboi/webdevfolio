@@ -7,7 +7,7 @@ import '../css/Home.css'
 
 function Home(props) {
   return (
-    <div className='defaultPadding'>
+    <div className=''>
       <Introduction />
       <Work />
     </div>
