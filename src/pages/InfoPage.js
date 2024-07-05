@@ -28,7 +28,7 @@ const pageContentsList = [
 
 function InfoPage(props) {
   return (
-    <div className='infoContainer'>
+    <div className='infoContainer defaultPadding'>
 
       <PageNavList contents={pageContentsList} />
       <div className="quoteContainer" id='quote'>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import ProjectInfoContainer from "../components/ProjectInfoContainer"
+import ProjectIntro from '../components/ProjectIntro';
 import { projectsInfo } from '../data'
 
 const AboutProject = () => {
@@ -21,7 +22,11 @@ const AboutProject = () => {
   })
   return (
     <div>
-      <ProjectInfoContainer work={pDetails.moreAboutProject} loaded={loaded} />
+      <ProjectIntro />
+      <div className='defaultPadding'>
+        <ProjectInfoContainer work={pDetails.moreAboutProject} loaded={loaded} />
+
+      </div>
     </div>
   )
 }

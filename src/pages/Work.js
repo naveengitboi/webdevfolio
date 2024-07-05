@@ -4,7 +4,7 @@ import { projectsInfo } from '../data'
 import { Link } from 'react-router-dom'
 function Work() {
   return (
-    <div classname='workcontainer'>
+    <div classname='workcontainer defaultPadding '>
       {
         projectsInfo.map((proj, index) => (
           <Link key={index} to={`/project/${proj.proj}`}>

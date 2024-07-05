@@ -34,13 +34,13 @@ function App() {
 
   return (
     <div className="reactcontainer" >
-      <Cursor />
       <Navbar />
+      <Cursor />
       {isLoading ? (
         <Loader />
       ) : (
         <>
-          <div className="app defaultPadding">
+          <div className="app ">
             <ScrollToTop />
             <Routes>
               <Route
@@ -59,7 +59,6 @@ function App() {
                   </React.Suspense>
                 }
               />
-              <Route path="/moreworks" element={<MoreWorks />} />
               <Route path="/project/:proj" element={< AboutProject />} />
             </Routes>
             <Footer />

@@ -1,10 +1,12 @@
 import React from 'react'
 import '../css/Footer.css'
+import HorizontalLine from './HorizontalLine'
 function Footer() {
   return (
-    <div className=' footerContainer'>
-      <div className="horizontalline"></div>
+    <div className=' footerContainer defaultPadding'>
+      <HorizontalLine />
       <div className="footerContent">
+
         <div className="leftContent">
           <h1 className='logo'>
             JNAVEEN

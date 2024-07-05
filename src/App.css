@@ -119,10 +119,11 @@ body {
 }
 
 .app {
-  padding-top: 5rem;
 }
 .defaultPadding{
   padding-left:var(--sides_padding);
+
+  padding-top: 5rem;
   padding-right:var(--sides_padding);
 }
 
