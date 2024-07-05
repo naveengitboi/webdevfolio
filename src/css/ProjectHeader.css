@@ -1,0 +1,27 @@
+.phWrapper{
+  position:relative;
+  padding:4rem 0;
+  margin:2rem 0;
+}
+
+.phWrapper .heading
+{
+  color:var(--text_gray_color);
+  text-transform: uppercase;
+  display:flex;
+  align-items:center;
+  padding: 2rem 0;
+}
+
+
+.phSection
+{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  margin:10vh 0;
+}
+
+.phSection .mediumfont
+{
+  color:var(--text_gray_color);
+}

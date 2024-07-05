@@ -5,7 +5,7 @@ import { profileInfo, skillInfo, experienceInfo } from '../data'
 import PageNavList from '../components/PageNavList'
 import TextEffect from '../customHooks/useTextEffect.js'
 import SkillsItem from '../components/SkillsItem'
-
+import { GlowDot } from '../components/ThreeDots'
 const pageContentsList = [
   {
     sectionName: 'Quote',
@@ -32,7 +32,7 @@ function InfoPage(props) {
 
       <PageNavList contents={pageContentsList} />
       <div className="quoteContainer" id='quote'>
-        <p className='minifont heading'><span className='glowdot'></span> Quote That works for me</p>
+        <p className='minifont heading'><GlowDot /> Quote That works for me</p>
         <div className='mainfont pretag'>
           <p className='quote mainfont'>karmany evadhikaras te <br />
             ma phalesu kadacana
@@ -68,7 +68,7 @@ function InfoPage(props) {
       </div>
 
       <div className="experienceContainer" id='experience'>
-        <p className='minifont'><span className='glowdot'></span> Experience</p>
+        <p className='minifont'><GlowDot /> Experience</p>
 
         {
           experienceInfo.map((company, index) => (
