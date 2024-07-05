@@ -3,8 +3,12 @@
   overflow: hidden;
   border-radius: var(--border_radius);
 
+  padding-top:0rem;
+  padding-bottom:0 ;
   position: relative;
   margin: 2rem 0 6rem;
+  text-align:center;
+  line-height:1.5;
 }
 
 .introHeader {

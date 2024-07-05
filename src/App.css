@@ -15,7 +15,7 @@ font-family: 'Space Grotesk', sans-serif;
 
 :root {
   /* padding */
-  --sides_padding: 20vw;
+  --sides_padding: 14vw;
   --link_padding: 0.5rem 1.25rem;
   /* colors */
   --gray_color: #252525;
@@ -119,7 +119,12 @@ body {
 }
 
 .app {
-  padding: 5rem var(--sides_padding) 2rem;
+}
+.defaultPadding{
+  padding-left:var(--sides_padding);
+
+  padding-top: 5rem;
+  padding-right:var(--sides_padding);
 }
 
 .cursor {
