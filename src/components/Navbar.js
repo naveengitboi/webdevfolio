@@ -4,7 +4,6 @@ import { MdArrowOutward } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TiPointOfInterest } from "react-icons/ti";
 import "../css/Navbar.css";
-import HorizontalLine from "./HorizontalLine";
 import TextEffect from '../customHooks/useTextEffect.js'
 function Navbar(props) {
   const [ham, setHam] = useState(false);
