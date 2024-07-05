@@ -140,41 +140,49 @@ export const projectsInfo = [
         "I owned and lead design stategy for the futer of the Test Hub in support of Stadia's B2B pivot- playing a critical role in scoping and prototyping the game", "Test Hub Next's Vision was highly praised by key stake holder but was unfortunately, sunste along side..."
 
       ],
-      summary: {
-        workflow: {
-          heading: 'WorkFlow of wallet Manger Project',
-          content: 'It was critical to find and place elements in dashboard and process to futher continue work',
-          images: ['/assets/basicdept.jpg', '/assets/basicdept.jpg']
-        },
-        fixedStyles: {
-          heading: 'Common Styles',
-          content: 'Different contents and fonts used',
-          images: ['/assets/basicdept.jpg']
-        },
-        highlights: [
-          {
-            heading: 'Notifications and Transaction History',
-            content: 'Seamlessly integrated notifications in website and transaction that user has done earlier are stored and can be downloaded as pdf...',
-            himage: '/assets/basicdept.jpg'
-          },
-          {
-            heading: 'Payments and Dashboards',
-            content: 'Addeding so and so',
-            himage: '/assets/basicdept.jpg'
-          },
-          {
-            heading: 'Payments and Dashboards',
-            content: 'Addeding so and so',
-            himage: '/assets/basicdept.jpg'
-          }
-        ]
-      }
-
-
     }
   },
 ]
 
 export const moreProjects = [
+
+]
+
+
+export const moreAboutProject = [
+
+  {
+    projectName: 'wallet manager',
+    summary: {
+
+      role: {
+        type: 'Developer',
+        context: 'Feature Scoping, Research and Devloping'
+
+      },
+      isTeam: false,
+      team: [{
+        teamate: 'Naveen',
+        twork: 'Frontend Developer'
+      },
+      {
+        teamate: 'Naveen',
+        twork: 'Frontend Developer'
+      }, {
+        teamate: 'Naveen',
+        twork: 'Frontend Developer'
+      }],
+      own: 'Worked on it from scratch, learning different languages.',
+      timeline: '1+Month',
+      completed: false,
+      progress: 'currently woriking on Charts and analytics',
+      overview: [
+        "Test on Hub was a campanion web app originally built to be used by stadia game and we are taking over it",
+        "I owned and lead design stategy for the futer of the Test Hub in support of Stadia's B2B pivot- playing a critical role in scoping and prototyping the game", "Test Hub Next's Vision was highly praised by key stake holder but was unfortunately, sunste along side..."
+
+      ],
+    }
+
+  }
 
 ]

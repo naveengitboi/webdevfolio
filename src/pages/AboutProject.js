@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-import ProjectHeader from '../components/ProjectHeader';
 import ProjectInfoContainer from "../components/ProjectInfoContainer"
 import ProjectIntro from '../components/ProjectIntro';
+import ProjectSectionItem from '../components/ProjectSectionItem';
 import { projectsInfo } from '../data'
 
 const AboutProject = () => {
@@ -26,8 +26,8 @@ const AboutProject = () => {
       <ProjectIntro />
       <div className='defaultPadding'>
         <ProjectInfoContainer work={pDetails.moreAboutProject} loaded={loaded} />
-        <ProjectHeader type={'Problem'} shoutout={'Take a change in future'} subheader={' The message was loud and clear'} content={'Enabling Bluetooth on the Stadia controllers was the biggest request from the community. Above all else, it was the right thing to do, and an opportunity to overdeliver. '} />
 
+        <ProjectSectionItem />
 
       </div>
     </div>
