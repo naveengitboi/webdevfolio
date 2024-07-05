@@ -31,4 +31,11 @@ export function OrangeDot() {
     <div className='dots'>    <span className='orange'></span> </div>
   )
 }
+
+
+export function GlowDot() {
+  return (
+    <span className='glowdot'></span>
+  )
+}
 export default ThreeDots
