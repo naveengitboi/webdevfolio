@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import '../css/PIContainer.css';
-import { useParams } from "react-router-dom";
-import { projectsInfo } from '../data'
 import { GreenDot, OrangeDot } from './ThreeDots'
 const ProjectInfoContainer = (props) => {
   const { loaded, work } = props

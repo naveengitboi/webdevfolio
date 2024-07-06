@@ -1,36 +1,53 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
+import ProjectHeader from '../components/ProjectHeader';
 import ProjectInfoContainer from "../components/ProjectInfoContainer"
 import ProjectIntro from '../components/ProjectIntro';
 import ProjectSectionItem from '../components/ProjectSectionItem';
-import { projectsInfo } from '../data'
+import { moreAboutProject } from '../data'
 
 const AboutProject = () => {
   const [loaded, setLoaded] = useState(false)
-  const [pDetails, setProjectDetails] = useState({});
+  const [details, setDetails] = useState({});
   const params = useParams()
   const project = params.proj
+  console.log(project)
   useEffect(() => {
 
-    projectsInfo.filter((projectItem) => {
-      if (projectItem.proj === project) {
-        setProjectDetails(projectItem);
+    moreAboutProject.filter((projectItem) => {
+      console.log(projectItem)
+      if (projectItem.projectName === project) {
+        setDetails(projectItem);
         setLoaded(true)
         return projectItem;
 
       }
     })
-  })
+  }, [])
+
+  console.log(details)
+
+
   return (
     <div>
       <ProjectIntro />
       <div className='defaultPadding'>
-        <ProjectInfoContainer work={pDetails.moreAboutProject} loaded={loaded} />
+        <ProjectInfoContainer work={details.summary} loaded={loaded} />
 
-        <ProjectSectionItem />
+        {
+          loaded &&
+          details.projectDetails.map((eachProject,:: idx) => {
+            return (
+        <div className='detailsSection'>              <ProjectHeader header={eachProject.headerContent} />
+
+          <ProjectSectionItem project={eachProject} />
+        </div>
+        )
+          })
+        }
 
       </div>
-    </div>
+    </div >
   )
 }
 

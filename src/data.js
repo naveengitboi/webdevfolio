@@ -1,4 +1,9 @@
+import { GiClubs } from "react-icons/gi";
+import { GREEN_COLOR } from "./constants/colors";
+
+
 export const profileInfo = [
+
   {
     question: "Status",
     answer: "Prefinal Undergrad Mechanical student @NITC.  I love doing stuff which i feel worthy to attempt, never see for a hint in life while taking a step.",
@@ -152,7 +157,7 @@ export const moreProjects = [
 export const moreAboutProject = [
 
   {
-    projectName: 'wallet manager',
+    projectName: 'Wallet Manager',
     summary: {
 
       role: {
@@ -181,8 +186,59 @@ export const moreAboutProject = [
         "I owned and lead design stategy for the futer of the Test Hub in support of Stadia's B2B pivot- playing a critical role in scoping and prototyping the game", "Test Hub Next's Vision was highly praised by key stake holder but was unfortunately, sunste along side..."
 
       ],
-    }
+    },
+    projectDetails: [
+      {
+        headerContent: {
+          type: 'problem',
+          typeHeader: 'Take a change in future',
+          typeSubHeader: 'This is the sub header',
+          typeContent: 'Enabling Bluetooth on the Stadia controllers was the biggest request from the community. Above all else, it was the right thing to do, and an opportunity to overdeliver.',
+        },
+        supportingImages: [
+          {
+            text: 'Image showcasing so and so styff',
+            icon: <GiClubs />,
+            img: '/assets/dummy'
+          },
+          {
+            text: 'Image showcasing so and so styff',
+            icon: <GiClubs />,
+            img: '/assets/dummy'
+          }
+        ],
+        isBlocksExit: true,
+        blocks: [
+          {
+            icon: <GiClubs />,
+            header: 'Concise Clarity',
+            content: 'Clear informative and straight forward instructions'
+          },
+          {
+            icon: <GiClubs />,
+            header: 'Concise Clarity',
+            content: 'Clear informative and straight forward instructions'
+          },
+          {
+            icon: <GiClubs />,
+            header: 'Concise Clarity',
+            content: 'Clear informative and straight forward instructions'
+          },
+          {
 
+            icon: <GiClubs />,
+            header: 'Concise Clarity',
+            content: 'Clear informative and straight forward instructions'
+          }
+        ],
+        isAchievement: true,
+        acheivements: {
+          icon: <GiClubs />,
+          header: 'Concise Clarity',
+          content: 'Clear informative and straight forward instructions'
+        }
+      }
+    ]
   }
 
 ]
