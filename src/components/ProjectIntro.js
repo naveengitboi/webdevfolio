@@ -9,22 +9,23 @@ const BGLight = styled.div`
   tranform:translateX(-50%);
   width:100%;
   height:90%;
-  background:radial-gradient(#073F6E, transparent);
-  border-radius:50%;
-  z-index:-5;
-  filter:blur(2000px);
+  background:radial-gradient(${props => props.color || "transparent"}, transparent);
+  border - radius: 50 %;
+z - index: -5;
+filter: blur(2000px);
 
 `
 
 
-const ProjectIntro = () => {
+const ProjectIntro = (props) => {
+  const { name, description, img, bgColor } = props.intro
   return (
     <div className="projectIntroWrapper">
-      <BGLight className="bgLight"></BGLight>
-      <p className="medLargeFont projectName">Wallet Manager</p>
-      <p className="mediumfont">A Money Manager app - 2024</p>
-      <img src='/dummy' alt='money manager app' />
-    </div>
+      <BGLight color={bgColor} ></BGLight>
+      <p className="medLargeFont projectName">{name}</p>
+      <p className="mediumfont">{description}</p>
+      <img src={img} alt={description} />
+    </div >
   )
 }
 

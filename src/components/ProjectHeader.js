@@ -3,12 +3,12 @@ import { GlowDot } from './ThreeDots'
 import '../css/ProjectHeader.css'
 import HorizontalLine from './HorizontalLine'
 const ProjectHeader = (props) => {
-  const { type, typeHeader, typeSubHeader, typeContent } = props.header;
+  const { type, typeHeader, typeSubHeader, typeContent, isHeader } = props.header;
   return (
     <div className="phContainer">
       <div className="phWrapper">
         <HorizontalLine />
-        <p className='minifont heading'><GlowDot /> {type}</p>
+        {isHeader && <p className='minifont heading'><GlowDot /> {type}</p>}
         <p className='medLargeFont'>{typeHeader}</p>
         <div className='phSection'>
 
