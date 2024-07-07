@@ -8,13 +8,16 @@ const Line = styled.div`
     left:0;
     width: 100%;
     height: 1px;
-    background: linear-gradient(to right, transparent, var(--gray_medium_color),transparent);
+    background: linear-gradient(to right, transparent, ${props => props.color || "var(--gray_medium_color)"}, transparent);
 `
 
-const HorizontalLine = () => {
+const HorizontalLine = (props) => {
+
+  const color = props.color ? props.color : "var(--gray_medium_color)"
+
   return (
 
-    <Line></Line>
+    <Line color={color}></Line>
   )
 }
 

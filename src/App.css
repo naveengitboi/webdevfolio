@@ -22,6 +22,9 @@ font-family: 'Space Grotesk', sans-serif;
   --gray_light_color: hsl(0, 0%, 24%);
   --gray_medium_color: #2d2d2d;
   --black_color: #101010;
+  --orange_color:#f4bd4e;
+  --green_color: #57c353;
+  --red_color: #f46f5c;
   /* text color */
   --text_color: #f2f2f2;
   --text_gray_color: #808080;
