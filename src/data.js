@@ -1,5 +1,5 @@
 import { GiClubs } from "react-icons/gi";
-import { GREEN_COLOR } from "./constants/colors";
+import { GREEN_COLOR, ORANGE_COLOR, RED_COLOR } from "./constants/colors";
 
 
 export const profileInfo = [
@@ -118,39 +118,7 @@ export const projectsInfo = [
     projLink: "https://github.com/naveengitboi/basic_dept_clone",
     imgUrl: '/assets/basicdept.jpg',
     linkType: "github",
-    moreAboutProject: {
-      role: {
-        type: 'Developer',
-        context: 'Feature Scoping, Research and Devloping'
-
-      },
-      isTeam: false,
-      team: [{
-        teamate: 'Naveen',
-        twork: 'Frontend Developer'
-      },
-      {
-        teamate: 'Naveen',
-        twork: 'Frontend Developer'
-      }, {
-        teamate: 'Naveen',
-        twork: 'Frontend Developer'
-      }],
-      own: 'Worked on it from scratch, learning different languages.',
-      timeline: '1+Month',
-      completed: false,
-      progress: 'currently woriking on Charts and analytics',
-      overview: [
-        "Test on Hub was a campanion web app originally built to be used by stadia game and we are taking over it",
-        "I owned and lead design stategy for the futer of the Test Hub in support of Stadia's B2B pivot- playing a critical role in scoping and prototyping the game", "Test Hub Next's Vision was highly praised by key stake holder but was unfortunately, sunste along side..."
-
-      ],
-    }
   },
-]
-
-export const moreProjects = [
-
 ]
 
 
@@ -158,6 +126,14 @@ export const moreAboutProject = [
 
   {
     projectName: 'Wallet Manager',
+    introduction: {
+      name: 'Wallet Manager-2024',
+      description: 'Made with LOVE 2024',
+      img: '/dummy',
+
+      bgColor: '#073F6E'
+
+    },
     summary: {
 
       role: {
@@ -190,53 +166,63 @@ export const moreAboutProject = [
     projectDetails: [
       {
         headerContent: {
+          isHeader: true,
           type: 'problem',
           typeHeader: 'Take a change in future',
           typeSubHeader: 'This is the sub header',
           typeContent: 'Enabling Bluetooth on the Stadia controllers was the biggest request from the community. Above all else, it was the right thing to do, and an opportunity to overdeliver.',
         },
-        supportingImages: [
+
+        supportContent: [
           {
-            text: 'Image showcasing so and so styff',
-            icon: <GiClubs />,
-            img: '/assets/dummy'
-          },
-          {
-            text: 'Image showcasing so and so styff',
-            icon: <GiClubs />,
-            img: '/assets/dummy'
-          }
-        ],
-        isBlocksExit: true,
-        blocks: [
-          {
-            icon: <GiClubs />,
-            header: 'Concise Clarity',
-            content: 'Clear informative and straight forward instructions'
-          },
-          {
-            icon: <GiClubs />,
-            header: 'Concise Clarity',
-            content: 'Clear informative and straight forward instructions'
-          },
-          {
-            icon: <GiClubs />,
-            header: 'Concise Clarity',
-            content: 'Clear informative and straight forward instructions'
+            isImage: true,
+            data: {
+              text: 'Image showcasing so and so styff',
+              icon: <GiClubs />,
+              img: '/dummy'
+            }
           },
           {
 
+            isImage: false,
+            data: {
+              isHeader: false,
+              typeSubHeader: 'Checking out the problem of the scenario',
+              typeContent: 'Enabling the youtube is an hectic challange for me to do'
+            }
+          },
+          {
+
+            isImage: true,
+            data: {
+              text: 'Image showcasing so and so styff',
+              icon: <GiClubs />,
+              img: '/dummy'
+            }
+          }
+        ],
+        isBlocksExist: true,
+        blocksColor: ORANGE_COLOR,
+        blocks: [
+          {
+            isFinal: false,
             icon: <GiClubs />,
+            header: 'Concise Clarity',
+            content: 'Clear informative and straight forward instructions'
+          },
+          {
+            isFinal: false,
+            icon: <GiClubs />,
+            header: 'Concise Clarity',
+            content: 'Clear informative and straight forward instructions'
+          },
+          {
+            icon: <GiClubs />,
+            isFinal: false,
             header: 'Concise Clarity',
             content: 'Clear informative and straight forward instructions'
           }
         ],
-        isAchievement: true,
-        acheivements: {
-          icon: <GiClubs />,
-          header: 'Concise Clarity',
-          content: 'Clear informative and straight forward instructions'
-        }
       }
     ]
   }
