@@ -1,5 +1,5 @@
 nav {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem var(--sides_padding);
   position: fixed;
   display: flex;
   justify-content: space-between;
