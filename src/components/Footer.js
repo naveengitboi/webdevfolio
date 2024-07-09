@@ -3,7 +3,7 @@ import '../css/Footer.css'
 import HorizontalLine from './HorizontalLine'
 function Footer() {
   return (
-    <div className=' footerContainer defaultPadding'>
+    <div className='footerContainer defaultPadding'>
       <HorizontalLine />
       <div className="footerContent">
 

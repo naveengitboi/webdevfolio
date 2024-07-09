@@ -14,7 +14,7 @@ function Navbar(props) {
 
   return (
     <div className="gradientOuter">
-      <nav className="navbar">
+      <nav className="navbar ">
         <div
           className="logo"
           data-initial="JNAVEEN"
