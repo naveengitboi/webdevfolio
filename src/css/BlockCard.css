@@ -1,0 +1,56 @@
+
+
+.bcWrapper
+{
+  padding: 0 2rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  text-align:center;
+}
+
+.bcWrapper .mainfont
+{
+  margin:2rem 0;
+}
+
+.bcWrapper .mediumfont
+{
+  color: var(--text_gray_color);
+}
+
+
+/* image container section */
+.imageWrapper
+{
+  margin: 2rem 0;
+}
+.imageWrapper img
+{
+  width:100%;
+}
+
+.imageWrapper .bottomTextImage
+{
+  color:var(--text_gray_color);
+  text-align:right;
+  display:flex;
+text-transform: uppercase;
+  align-items:center;
+  justify-content:flex-end;
+  font-size:10px;
+}
+.imageWrapper .bottomTextImage .svgSpan svg 
+{
+  fill: var(--text_gray_color);
+  font-size: 19px;
+  margin:0 16px;
+  transition: all 0.5s ease;
+}
+
+.imageWrapper:hover .svgSpan svg
+{
+  fill: var(--text_color);
+}
+
