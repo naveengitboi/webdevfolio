@@ -36,7 +36,7 @@ font-family: 'Space Grotesk', sans-serif;
 
   /* fontfamily */
   --large_font_size: 6rem;
-  --med_large_font_size: 3rem;
+  --med_large_font_size: 2.15rem;
   --main_font_size: 1.5rem;
   --medium_font_size: 1.15rem;
   --small_font_size: 1rem;
@@ -55,6 +55,7 @@ font-family: 'Space Grotesk', sans-serif;
   font-size: var(--med_large_font_size);
   font-family: var(--space_grotex);
   font-weight: bold;
+  line-height:1;
 }
 .mainfont {
   font-size: var(--main_font_size);

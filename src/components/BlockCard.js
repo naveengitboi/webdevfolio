@@ -19,35 +19,38 @@ width:100%;
 height:100%;
 position:absolute;
 top:-50%;
+tranform:translateY(-50%);
   background: radial-gradient( ${props => props.color || "gray"},transparent );
-filter: blur(300px) opacity(0.35);
+filter: blur(500px) opacity(0.40);
 `
 const SVGIcon = styled.div`
+  display:flex;
+
+  justify-content:center;
+  align-items:flex-end;
   & > svg{
     fill: ${props => props.color || 'white'};
-      font-size:3rem;
+      font-size:1.85rem;
   }
+
 
 `
 const BlockCardContainer = styled.div`
   border:1px solid var(--border_light_color);
   border-radius: 0.5rem;
   width: 350px;
+  width:${props => props.longer ? '100%' : '350px'};
   background-color:#191919;
-  display:flex;
-  flex-direction:column;
   margin: 0 1.5rem ;
-  align-items:center;
-  justify-content: center;
   position: relative;
   overflow:hidden;
-  min-height: 400px;
-
+height:${props => props.longer ? '100%' : '380px'};
+  padding: ${props => props.longer ? '3rem' : ''};
 `
 
 const BlockCard = (props) => {
 
-  const { type, block, extra, width } = props
+  const { type, block, acceptNums = false, cnt } = props
   let color;
   bgColors.filter(col => {
     if (col.type === type) {
@@ -56,21 +59,29 @@ const BlockCard = (props) => {
     }
   })
 
+
   return (
 
-    <BlockCardContainer className='bcContainer'>
+    <BlockCardContainer className='bcContainer' longer={block.isFinal}>
       <BgLightColor color={color} />
       <HorizontalLine color={color} />
       <div className='bcWrapper'>
         <SVGIcon color={color} >
           {block.icon}
-          {block.isFinal && <p className='mediumfont'>hello</p>}
 
         </SVGIcon>
 
-        <p className='mainfont'>{block.header}</p>
-        <p className='mediumfont'>{block.content}</p>
+        <div className="bcDetails">
+          {block.isFinal && <p className='mediumfont'>{block.note}</p>}
+          <p className={`${block.isFinal ? 'medLargeFont' : 'mainfont'}`}>{block.header}</p>
+          {!block.isFinal && <p className='mediumfont'>{block.content}</p>}
+        </div>
       </div>
+
+      {acceptNums && block.useNums && <div className='numberDiv'>
+        <p className='medLargeFont'>{cnt}</p>
+      </div>
+      }
     </BlockCardContainer >
   )
 }

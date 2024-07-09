@@ -1,5 +1,7 @@
 import { GiClubs } from "react-icons/gi";
-import { GREEN_COLOR, ORANGE_COLOR, RED_COLOR } from "./constants/colors";
+import { SiMaterialdesignicons } from "react-icons/si";
+import { PiGameControllerDuotone, PiFigmaLogoDuotone } from "react-icons/pi";
+import { ORANGE_COLOR, RED_COLOR, GREEN_COLOR, BLUE_COLOR } from "./constants/colors";
 
 
 export const profileInfo = [
@@ -129,10 +131,8 @@ export const moreAboutProject = [
     introduction: {
       name: 'Wallet Manager-2024',
       description: 'Made with LOVE 2024',
-      img: '/dummy',
-
+      img: '/assets/works/wm/0.png',
       bgColor: '#073F6E'
-
     },
     summary: {
 
@@ -163,64 +163,236 @@ export const moreAboutProject = [
 
       ],
     },
+
+
+
+
+
     projectDetails: [
       {
+        isHeaderExist: true,
         headerContent: {
           isHeader: true,
-          type: 'problem',
-          typeHeader: 'Take a change in future',
-          typeSubHeader: 'This is the sub header',
-          typeContent: 'Enabling Bluetooth on the Stadia controllers was the biggest request from the community. Above all else, it was the right thing to do, and an opportunity to overdeliver.',
+          type: 'Challange',
+          typeHeader: 'Exposing myself to bigger codebase',
+          typeSubHeader: 'Embracing complex coding challenges to accelerate my growth as a developer.',
+          typeContent: "Tackling more daunting coding challenges allows me to elevate my skills. By constructing everything from scratch, including the UI and code, I'm forced to delve deeper and learn more effectively.Moreover, propelling each other forward to achieve collective growth is an even greater undertaking that requires a collaborative effort."
         },
+        isSupportContentExist: false,
+        isBlocksExist: true,
+        blocksColor: RED_COLOR,
+        blocks: [
+          {
+            isFinal: false,
+            icon: <PiFigmaLogoDuotone />,
 
+            header: 'User Interface',
+            content: 'Have to create website User Interface from zero, using Figma tool. (HLD)',
+            useNums: true,
+          },
+          {
+            isFinal: false,
+            icon: <PiGameControllerDuotone />,
+            header: 'Initiation',
+            content: 'Kicking off the project by collecting all necessary resources and uploading them to GitHub.',
+            useNums: true,
+          },
+          {
+            icon: <GiClubs />,
+            isFinal: false,
+            header: 'Learnings',
+            content: 'Have to learn various tools and get exposure of those to make project look acheivable.',
+            useNums: true,
+          }
+        ],
+      },
+      {
+        isHeaderExist: true,
+        headerContent: {
+          isHeader: true,
+          type: 'Work Flow',
+          typeHeader: 'How I approach Problem',
+          typeSubHeader: 'I condensed my ideas and process into a canvas',
+          typeContent: "I began by crafting a website layout and structure using Figma, ensuring a solid foundation for the design. This step allowed me to visualize the overall architecture. Next, I created detailed user database schemas to gain a deeper understanding of the data requirements. This thorough planning phase sets the stage for a successful website development process."
+        },
+        isSupportContentExist: true,
+        isBlocksExist: false,
         supportContent: [
           {
             isImage: true,
             data: {
-              text: 'Image showcasing so and so styff',
+              text: 'One.O  workflow of the website',
               icon: <GiClubs />,
-              img: '/dummy'
+              img: '/assets/works/wm/10.png'
+            }
+          },
+        ]
+
+      },
+      {
+        isHeaderExist: true,
+        headerContent: {
+          isHeader: true,
+          type: 'Glimpse',
+          typeHeader: 'Understanding Core',
+          typeSubHeader: 'Working of Reusable Components',
+          typeContent: "Built Reusable componenents like forms, transation table, history table, Graphs/ Analytics, Register, Login forms, User profile, so on. These sort of reusability enhanced the entire work flow of the website."
+        },
+        isSupportContentExist: true,
+        isBlocksExist: false,
+        supportContent: [
+          {
+            isImage: true,
+            data: {
+              text: 'Two.O Glimpse of Small Components',
+              icon: <GiClubs />,
+              img: '/assets/works/wm/1.png'
             }
           },
           {
-
             isImage: false,
             data: {
               isHeader: false,
-              typeSubHeader: 'Checking out the problem of the scenario',
-              typeContent: 'Enabling the youtube is an hectic challange for me to do'
+              typeSubHeader: 'Its interesting and challanging.',
+              typeContent: 'Crafted reusable components that streamlined my workflow, making tasks more efficient and streamlined. These components now enable me to tackle projects with ease and consistency.'
             }
           },
           {
-
             isImage: true,
             data: {
-              text: 'Image showcasing so and so styff',
+              text: 'Three.O Forgot password component',
               icon: <GiClubs />,
-              img: '/dummy'
+              img: '/assets/works/wm/2.png'
+            }
+          },
+          {
+            isImage: false,
+            data: {
+              isHeader: false,
+              typeSubHeader: 'History/ Heart of website',
+              typeContent: 'Created all sort of functionality a actual or a real website has. More functionality and more user friendly, Downloading history is what everyone wanted.'
+            }
+          },
+          {
+            isImage: true,
+            data: {
+              text: 'Four.O Very Recent history',
+              icon: <GiClubs />,
+              img: '/assets/works/wm/4.png'
+            }
+          },
+          {
+            isImage: true,
+            data: {
+              text: 'Five.O All Transaction history',
+              icon: <GiClubs />,
+              img: '/assets/works/wm/5.png'
             }
           }
-        ],
+
+        ]
+      },
+      {
+        isHeaderExist: false,
+        isSupportContentExist: false,
         isBlocksExist: true,
-        blocksColor: ORANGE_COLOR,
+        blocksColor: BLUE_COLOR,
+        blocks: [
+          {
+            isFinal: true,
+            icon: <PiFigmaLogoDuotone />,
+            note: 'Findings',
+
+            header: 'Things became more tricky to understand when lines are increasing, in high frequency! But No stops!',
+            useNums: false
+
+          }
+        ]
+      },
+      {
+        isHeaderExist: false,
+        isSupportContentExist: true,
+        isBlocksExist: false,
+        supportContent: [
+          {
+            isImage: false,
+            data: {
+              isHeader: false,
+              typeSubHeader: 'Entry Point?',
+              typeContent: 'Integrated Firebase Authentication for google login. Apart from that, actual Registration and login procedure is also followed. This helps the user to not focus on form filling, and hence ease in entering application.'
+            }
+          },
+
+          {
+            isImage: true,
+            data: {
+              text: 'Six.0 Entry to site',
+              icon: <GiClubs />,
+              img: '/assets/works/wm/7.png'
+            }
+          },
+          {
+            isImage: false,
+            data: {
+              isHeader: false,
+              typeSubHeader: 'One page for all options!',
+              typeContent: 'You have everything on table. Just know what to do. You have option to change password, 2factor authentication, deleting account, so on...'
+            }
+          },
+          {
+            isImage: true,
+            data: {
+              text: 'Seven.O All settings',
+              icon: <GiClubs />,
+              img: '/assets/works/wm/9.png'
+            }
+          },
+          {
+            isImage: true,
+            data: {
+              text: 'Eight.O Deleting Account',
+              icon: <GiClubs />,
+              img: '/assets/works/wm/3.png'
+            }
+          },
+
+
+        ]
+      },
+      {
+        isHeaderExist: true,
+        headerContent: {
+          isHeader: true,
+          type: 'Output',
+          typeHeader: 'Finally we reach end of sea.',
+          typeSubHeader: 'This project enriched my design skills as well as coding skills. ',
+          typeContent: "It exposed me to different tools and errors. Like Apex charts, React Charts, Data integration with charts, Axios Cors Errors, Deploying errors, Protected Routes, Authentications with firebase, React and express routers, MongodB  so on...."
+        },
+        isSupportContentExist: false,
+        isBlocksExist: true,
+        blocksColor: GREEN_COLOR,
         blocks: [
           {
             isFinal: false,
-            icon: <GiClubs />,
-            header: 'Concise Clarity',
-            content: 'Clear informative and straight forward instructions'
+            icon: <PiFigmaLogoDuotone />,
+
+            header: 'Completed Figma',
+            content: 'Learned creating components, maskings, design principles so on.',
+            useNums: true,
           },
           {
             isFinal: false,
-            icon: <GiClubs />,
-            header: 'Concise Clarity',
-            content: 'Clear informative and straight forward instructions'
+            icon: <PiGameControllerDuotone />,
+            header: 'Decoded Figma',
+            content: 'Decoded various task by breaking them into chunks and components to build website.',
+            useNums: true,
           },
           {
             icon: <GiClubs />,
             isFinal: false,
-            header: 'Concise Clarity',
-            content: 'Clear informative and straight forward instructions'
+            header: 'Seekings',
+            content: 'Learned a lot of things in building website, as I explained above',
+            useNums: true,
           }
         ],
       }
