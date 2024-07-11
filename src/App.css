@@ -15,13 +15,16 @@ font-family: 'Space Grotesk', sans-serif;
 
 :root {
   /* padding */
-  --sides_padding: 20vw;
+  --sides_padding: 14vw;
   --link_padding: 0.5rem 1.25rem;
   /* colors */
   --gray_color: #252525;
   --gray_light_color: hsl(0, 0%, 24%);
   --gray_medium_color: #2d2d2d;
   --black_color: #101010;
+  --orange_color:#f4bd4e;
+  --green_color: #57c353;
+  --red_color: #f46f5c;
   /* text color */
   --text_color: #f2f2f2;
   --text_gray_color: #808080;
@@ -33,7 +36,7 @@ font-family: 'Space Grotesk', sans-serif;
 
   /* fontfamily */
   --large_font_size: 6rem;
-  --med_large_font_size: 3rem;
+  --med_large_font_size: 2.15rem;
   --main_font_size: 1.5rem;
   --medium_font_size: 1.15rem;
   --small_font_size: 1rem;
@@ -52,6 +55,7 @@ font-family: 'Space Grotesk', sans-serif;
   font-size: var(--med_large_font_size);
   font-family: var(--space_grotex);
   font-weight: bold;
+  line-height:1;
 }
 .mainfont {
   font-size: var(--main_font_size);
@@ -119,7 +123,11 @@ body {
 }
 
 .app {
-  padding: 5rem var(--sides_padding) 2rem;
+}
+.defaultPadding{
+  padding-left:var(--sides_padding);
+  padding-top: 5rem;
+  padding-right:var(--sides_padding);
 }
 
 .cursor {

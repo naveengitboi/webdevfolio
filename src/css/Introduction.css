@@ -3,8 +3,12 @@
   overflow: hidden;
   border-radius: var(--border_radius);
 
+  padding-top:0rem;
+  padding-bottom:0 ;
   position: relative;
   margin: 2rem 0 6rem;
+  text-align:center;
+  line-height:1.5;
 }
 
 .introHeader {
@@ -46,16 +50,26 @@
   margin-right: 0.35rem;
 }
 .dots .red {
-  background-color: #f46f5c;
+  background-color: var(--red_color);
   box-shadow: 0 0 10px #f46f5c;
 }
 .dots .green {
-  background-color: #57c353;
+  background-color: var(--green_color);
   box-shadow: 0 0 10px #91f38e;
 }
 .dots .orange {
-  background-color: #f4bd4e;
+  background-color: var(--orange_color);
   box-shadow: 0 0 10px #f4bd4e;
+}
+
+.glowdot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px white;
+  margin-right: 0.5rem;
 }
 .leftIconHeader svg {
   font-size: 1.25rem;

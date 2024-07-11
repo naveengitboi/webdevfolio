@@ -1,5 +1,5 @@
 nav {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem var(--sides_padding);
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,6 @@ nav {
   font-family: var(--space_grotex);
   z-index: 1000;
   backdrop-filter: blur(5px);
-  /* border: 2px solid red; */
 }
 .logo {
   font-weight: bold;
