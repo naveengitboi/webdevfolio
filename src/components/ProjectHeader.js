@@ -7,7 +7,7 @@ const ProjectHeader = (props) => {
   return (
     <div className="phContainer">
       <div className="phWrapper">
-        <HorizontalLine />
+        {isHeader && <HorizontalLine />}
         {isHeader && <p className='minifont heading'><GlowDot /> {type}</p>}
         <p className='medLargeFont'>{typeHeader}</p>
         <div className='phSection'>

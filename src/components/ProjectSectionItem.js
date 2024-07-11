@@ -5,17 +5,18 @@ import ProjectImage from "./ProjectImage";
 import '../css/ProjectSectionItem.css'
 const ProjectSectionItem = (props) => {
   const { project } = props
-  console.log(project.isBlocksExist)
+  console.log(project)
   return (
     <div className="psiContainer">
-      <ProjectHeader header={project.headerContent} />
-
+      {project.isHeaderExist &&
+        <ProjectHeader header={project.headerContent} />
+      }
 
       <div className="blocksContainer">
         {
           project.isBlocksExist && project.blocks.map((block, idx) => {
             return (
-              <BlockCard key={idx} type={project.blocksColor} extra={project} block={block} />
+              <BlockCard key={idx} type={project.blocksColor} extra={project} block={block} acceptNums={true} cnt={idx + 1} />
             )
           })
 
@@ -23,8 +24,9 @@ const ProjectSectionItem = (props) => {
       </div>
 
       <div className="imagesContainer">
-        {
+        {project.isSupportContentExist &&
           project.supportContent.map((content, idx) => {
+            console.log(content, idx)
 
             return content.isImage ? (
               <ProjectImage img={content.data} />
@@ -33,6 +35,7 @@ const ProjectSectionItem = (props) => {
           })
         }
       </div>
+
 
     </div>
   )

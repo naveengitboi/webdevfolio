@@ -2,24 +2,51 @@
 
 .bcWrapper
 {
-  padding: 0 2rem;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content: center;
+  padding: 0 1rem;
+  display:grid;
+  grid-template-rows: 1fr 2fr ;
   text-align:center;
+  gap:20px;
+  height:100%;
 }
 
 .bcWrapper .mainfont
 {
-  margin:2rem 0;
+  margin:0rem 0 1rem;
 }
 
 .bcWrapper .mediumfont
 {
   color: var(--text_gray_color);
 }
+.bcWrapper .bcDetails
+{
+  display:felx;
+  flex-direction:column;
+  justify-content:flex-start;
+}
 
+.numberDiv
+{
+  filter:opacity(0.1);
+  position:absolute;
+  left:50%;
+  tranform:translate(-50%,0);
+  bottom: 5px;
+  transition:all 0.25s ease;
+
+}
+.numberDiv .medLargeFont
+{
+color:var(--text_gray_color);
+}
+
+.bcDetails .medLargeFont
+{
+  font-weight:normal;
+  line-height: 1;
+  padding:0.85rem 0;
+}
 
 /* image container section */
 .imageWrapper

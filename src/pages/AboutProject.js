@@ -13,12 +13,10 @@ const AboutProject = () => {
   useEffect(() => {
 
     moreAboutProject.filter((projectItem) => {
-      console.log(projectItem)
       if (projectItem.projectName === project) {
         setDetails(projectItem);
         setLoaded(true)
         return projectItem;
-
       }
     })
   })
@@ -32,10 +30,10 @@ const AboutProject = () => {
         <ProjectInfoContainer work={details.summary} loaded={loaded} />
 
         {loaded &&
-          details.projectDetails.map((eachProject, idx) => {
+          details.projectDetails.map((eachSection, idx) => {
             return (
-              <div className='detailsSection'>
-                <ProjectSectionItem project={eachProject} />
+              <div key={idx} className='detailsSection'>
+                <ProjectSectionItem project={eachSection} loaded={loaded} />
               </div>
             )
           })
