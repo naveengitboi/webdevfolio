@@ -246,7 +246,7 @@ export const moreAboutProject = [
             data: {
               text: 'Two.O Glimpse of Small Components',
               icon: <GiClubs />,
-              img: '/assets/works/wm/1.png'
+              img: '/assets/works/ccd/7.png'
             }
           },
           {
