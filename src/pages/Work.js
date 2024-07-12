@@ -7,8 +7,7 @@ function Work() {
     <div classname='workcontainer defaultPadding '>
       {
         projectsInfo.map((proj, index) => (
-          <Link key={index} to={`/project/${proj.proj}`}>
-            <CardItem content={proj} />
+          <Link key={index} to={`/project/${proj.proj}`}> <CardItem content={proj} />
           </Link>
         ))
       }

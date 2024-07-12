@@ -1,21 +1,20 @@
-
-
-.projectIntroWrapper
-{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+.projectIntroWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 15vh 0 1rem;
   margin: 0;
   mask-image: linear-gradient(rgb(0 0 0 / 100%), transparent);
-
-}
-.projectIntroWrapper .projectName
-{
-    -webkit-text-fill-color: black, transparent;
-}
-.projectIntroWrapper img
-{
-  margin:2rem 0 0;
 }
 
+.projectIntroWrapper .projectName {
+  -webkit-text-fill-color: black, transparent;
+  z-index: 100;
+  margin: 0.5rem 0;
+}
+
+.projectIntroWrapper img {
+  margin: 2rem 0;
+  z-index: 100;
+  width: 70%;
+}
