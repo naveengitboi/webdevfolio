@@ -1,61 +1,56 @@
-
-.PICWrapper
-{
+.PICWrapper {
   --lineH: 1.5;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   padding: 1rem;
-  margin:0;
+  margin: 0;
 }
 
 
-.PICDetails
-{
-  padding:1rem ;
-  display:flex;
-  flex-direction:column;
-  justify-content: space-evenly;
+.PICDetails {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  
+.PICSection .teamContainer .mediumfont p {
+  color: var(--text_gray_color);
+  line-height: var(--lineH);
 }
-.PICSection .teamContainer .mediumfont p
-{
-  color:var(--text_gray_color);
-  line-height:var(--lineH);
-}
-.PICOverview .workOverview{
+
+
+.PICOverview .workOverview {
   margin-bottom: 0.89rem;
 }
-.PICSection{
-  margin: 1rem 0 3rem;
-  text-align:left;
-  line-height:var(--lineH);
+
+
+.PICSection {
+  text-align: left;
+  margin:1rem 0;
+  line-height: var(--lineH);
 }
 
 
-.PICSection .mediumfont{
-  color:var(--text_gray_color);
+.PICSection .mediumfont {
+  color: var(--text_gray_color);
 }
 
-.PICOverview 
-{
+.PICOverview {
   padding: 1rem;
   line-height: var(--lineH);
- display:flex;
-  flex-direction:column;
-  justify-content: space-evenly;
-
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.PICSection .highlightContent{
-  color:var(--text_color);
+.PICSection .highlightContent {
+  color: var(--text_color);
 }
 
-.statusChecker
-{
-  display:flex;
-  align-items:center;
-  gap: 20px; 
+.statusChecker {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }

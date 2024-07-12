@@ -40,7 +40,7 @@ export const skillInfo = [
   },
 
   {
-    category: 'Programming',
+    
     stuff: ['DSA', 'Python', 'C++(intermediate)', 'JavaScript', 'C', 'OOPs']
   },
 
@@ -121,6 +121,22 @@ export const projectsInfo = [
     imgUrl: '/assets/basicdept.jpg',
     linkType: "github",
   },
+  {
+    proj: "ccd",
+    projDescription: "Revamped a website for elegance and functionality using React JS, expanding my expertise in the framework.",
+    skillsUsed: ["React JS", "Routers"],
+    projLink: "https://github.com/naveengitboi/basic_dept_clone",
+    imgUrl: '/assets/basicdept.jpg',
+    linkType: "github",
+  },
+  {
+    proj: "Algozenith",
+    projDescription: "Revamped a website for elegance and functionality using React JS, expanding my expertise in the framework.",
+    skillsUsed: ["React JS", "Routers"],
+    projLink: "https://github.com/naveengitboi/basic_dept_clone",
+    imgUrl: '/assets/basicdept.jpg',
+    linkType: "github",
+  }
 ]
 
 
@@ -404,7 +420,7 @@ export const moreAboutProject = [
       name: 'GDFolio',
       description: 'Graphic Design Portfolio - 2021',
       img: '/assets/works/ps/0.png',
-      bgColor: '#073F6E'
+      bgColor: '#6A8C13'
     },
     summary: {
 
@@ -469,8 +485,8 @@ export const moreAboutProject = [
         headerContent: {
           isHeader: true,
           type: 'Idea',
-          typeHeader: 'Basic Design flow',
-          typeSubHeader: 'I have lame and basic design layout for the website in mind!',
+          typeHeader: 'Design flow',
+          typeSubHeader: 'I have lame concept in head',
           typeContent: "I kept thinking of what could be the layout of website! and I came up with a basic layout design that can effectivly work."
         },
         isSupportContentExist: true,
@@ -492,9 +508,9 @@ export const moreAboutProject = [
         headerContent: {
           isHeader: true,
           type: 'Glimpse',
-          typeHeader: 'Understanding Core',
-          typeSubHeader: 'Working of Reusable Components',
-          typeContent: "Built Reusable componenents like forms, transation table, history table, Graphs/ Analytics, Register, Login forms, User profile, so on. These sort of reusability enhanced the entire work flow of the website."
+          typeHeader: 'Everything at once!  ',
+          typeSubHeader: 'Very fewer components',
+          typeContent: "I made very fewer components for this website, as you might have guessed it already. Apart from this I added paralax scrolling effect for body section, where top, hero section, scrolls on top of body section. Its quiet interesting overall. "
         },
         isSupportContentExist: true,
         isBlocksExist: false,
@@ -502,52 +518,231 @@ export const moreAboutProject = [
           {
             isImage: true,
             data: {
-              text: 'Two.O Glimpse of Small Components',
+              isVideo: true,
+              text: 'Two.O Video Loops !',
               icon: <GiClubs />,
-              img: '/assets/works/wm/1.png'
+              img: '/assets/works/ps/3.mp4'
             }
           },
+        ]
+      },
+
+      {
+        isHeaderExist: false,
+        isSupportContentExist: false,
+        isBlocksExist: true,
+        blocksColor: BLUE_COLOR,
+        blocks: [
           {
-            isImage: false,
-            data: {
-              isHeader: false,
-              typeSubHeader: 'Its interesting and challanging.',
-              typeContent: 'Crafted reusable components that streamlined my workflow, making tasks more efficient and streamlined. These components now enable me to tackle projects with ease and consistency.'
-            }
-          },
+            isFinal: true,
+            icon: <PiFigmaLogoDuotone />,
+            note: 'Findings',
+            header: ' Paralax is a plus point to the website.',
+            useNums: false
+          }
+        ]
+      },
+
+      {
+        isHeaderExist: true,
+        headerContent: {
+          isHeader: true,
+          type: 'showcase',
+          typeHeader: 'How gallary Looks?',
+          typeSubHeader: 'Gallary showcase ',
+          typeContent: 'Gallary is made simple with the grid layout, having the images covered inside each block and fixing the layout for 3-4 in large screens and 1 smaller screens.'
+        },
+        isSupportContentExist: true,
+        isBlocksExist: false,
+        supportContent: [
           {
             isImage: true,
             data: {
-              text: 'Three.O Forgot password component',
+              text: 'Two.O Grid Layout Design !',
               icon: <GiClubs />,
-              img: '/assets/works/wm/2.png'
+              img: '/assets/works/ps/1.png'
             }
+          },
+        ]
+      },
+
+      {
+        isHeaderExist: true,
+        headerContent: {
+          isHeader: true,
+          type: 'output',
+          typeHeader: 'Yahooo, deployed!',
+          typeSubHeader: 'This project encourage me enough',
+          typeContent: "Although it was my starter development using react js, I gone through multple concepts and gained knowledge."
+        },
+        isSupportContentExist: false,
+        isBlocksExist: true,
+        blocksColor: GREEN_COLOR,
+        blocks: [
+          {
+            isFinal: false,
+            icon: <PiFigmaLogoDuotone />,
+            header: 'Build Layouts',
+            content: 'After going through multiple layouts fixed one for minimal look .',
+            useNums: true,
           },
           {
-            isImage: false,
-            data: {
-              isHeader: false,
-              typeSubHeader: 'History/ Heart of website',
-              typeContent: 'Created all sort of functionality a actual or a real website has. More functionality and more user friendly, Downloading history is what everyone wanted.'
-            }
+            isFinal: false,
+            icon: <PiGameControllerDuotone />,
+            header: 'Learned',
+            content: 'Gone through multiple lectures, docs, stack overflow queries  to get parallax effect',
+            useNums: true,
           },
+          {
+            icon: <GiClubs />,
+            isFinal: false,
+            header: 'Deploying',
+            content: 'Learned how to deploy website in Netlify.',
+            useNums: true,
+          }
+        ],
+      },
+
+      {
+        isHeaderExist: false,
+        isSupportContentExist: false,
+        isBlocksExist: true,
+        blocksColor: BLUE_COLOR,
+        blocks: [
+          {
+            isFinal: true,
+            icon: <PiFigmaLogoDuotone />,
+            note: 'Know me',
+            header: 'Let me share something with you!',
+            useNums: false
+          }
+        ]
+      },
+      {
+        isHeaderExist: false,
+        isSupportContentExist: true,
+        isBlocksExist: false,
+        supportContent: [
           {
             isImage: true,
             data: {
-              text: 'Four.O Very Recent history',
               icon: <GiClubs />,
-              img: '/assets/works/wm/4.png'
-            }
-          },
-          {
-            isImage: true,
-            data: {
-              text: 'Five.O All Transaction history',
-              icon: <GiClubs />,
-              img: '/assets/works/wm/5.png'
+              text: 'Extra.One.O My Journey',
+              img: '/assets/works/ps/4.png'
             }
           }
+        ]
+      },
+    ]
+  },
 
+  {
+    projectName: 'ccd',
+    introduction: {
+      name: 'CCD - 2023',
+      description: '@Internship at NITC 2023',
+      img: '/assets/works/ccd/0.png',
+      bgColor: '#121212'
+    },
+    summary: {
+
+      role: {
+        type: 'Frontend Developer',
+        context: ',Building Multiple components, and giving clean look!'
+
+      },
+      isTeam: true,
+      team: [{
+        teamate: 'Pranav',
+        twork: 'Senior Developer '
+      },
+      {
+        teamate: 'Jaljith',
+        twork: 'UI/UX'
+      }],
+      own: 'Worked on it from scratch, learning different languages.',
+      timeline: '2 full Months',
+      completed: true,
+      progress: 'We team successfully completed task within time period.',
+      overview: [
+        "We have only 2months to build a website that will be a place for hiring manager to apply for recruitment process in NITC.",
+        "We have given full two months of time to complete a fully fledged both frontend and backend application to present on the table. "
+      ],
+    },
+
+    projectDetails: [
+      {
+        isHeaderExist: true,
+        headerContent: {
+          isHeader: true,
+          type: 'Challange',
+          typeHeader: 'Everything is a head!',
+          typeSubHeader: 'The point is clear!',
+          typeContent: 'Have a lot of things to do! Making the components build correctly and moreover should be reusable!'
+        },
+        isSupportContentExist: false,
+        isBlocksExist: true,
+        blocksColor: RED_COLOR,
+        blocks: [
+          {
+            isFinal: false,
+            icon: <PiFigmaLogoDuotone />,
+            header: 'Initiation',
+            content: 'Setting up project for both frontend and backend.',
+            useNums: true,
+          },
+          {
+            isFinal: false,
+            icon: <PiGameControllerDuotone />,
+            header: 'Coding',
+            content: 'Turning out the lines of design to reusable code snippets!',
+            useNums: true,
+          },
+          {
+            isFinal: false,
+            icon: <GiClubs />,
+            header: 'Deploying',
+            content: 'After Frontend and Backend, hosting is the final stage to go!',
+            useNums: true
+          }
+        ],
+      },
+      {
+        isHeaderExist: true,
+        headerContent: {
+          isHeader: true,
+          type: 'Components',
+          typeHeader: 'Buildiing Phase',
+          typeSubHeader: 'Braking down the structure!',
+          typeContent: 'Braking down the components makes our work more simpler. I showed one example how I built a timeline in this websiite. This is the most efficeint way of coding!'
+        },
+        isSupportContentExist: true,
+        isBlocksExist: false,
+        supportContent: [
+          {
+            isImage: true,
+            data: {
+              text: 'One.O  workflow of the website',
+              icon: <GiClubs />,
+              img: '/assets/works/ccd/6.png'
+            }
+          },
+          {
+            isImage: false,
+            data: {
+              isHeader: false,
+              typeSubHeader: 'In similar Fashion',
+              typeContent: 'Understanding the content and their placement helps UI to be clean and gives a surface finished look to the site.'
+            }
+          },
+          {
+            isImage: true,
+            data: {
+              text: 'Two.O Glimpse of Small Components',
+              icon: <GiClubs />,
+              img: '/assets/works/ccd/3.png'
+            }
+          },
         ]
       },
       {
@@ -559,9 +754,8 @@ export const moreAboutProject = [
           {
             isFinal: true,
             icon: <PiFigmaLogoDuotone />,
-            note: 'Findings',
-
-            header: 'Things became more tricky to understand when lines are increasing, in high frequency! But No stops!',
+            note: 'Key Challange',
+            header: 'Making the Horizontal component seems not the easy at start, but Framer Motion made easy!',
             useNums: false
 
           }
@@ -576,8 +770,24 @@ export const moreAboutProject = [
             isImage: false,
             data: {
               isHeader: false,
-              typeSubHeader: 'Entry Point?',
-              typeContent: 'Integrated Firebase Authentication for google login. Apart from that, actual Registration and login procedure is also followed. This helps the user to not focus on form filling, and hence ease in entering application.'
+              typeSubHeader: 'So much stuff',
+              typeContent: 'Making this About section took all day with multiple revisions and figma disign was changing in a blink of eye. But dev has no choice to scream, huhuhuh'
+            }
+          },
+          {
+            isImage: true,
+            data: {
+              text: 'Three.O About section Component',
+              icon: <GiClubs />,
+              img: '/assets/works/ccd/7.png'
+            }
+          },
+          {
+            isImage: false,
+            data: {
+              isHeader: false,
+              typeSubHeader: 'Simplicity ',
+              typeContent: 'Used only CSS to achieve the morque effect, i.e horizontal scrolling , instead of using the Framer motion to do so. Challanged myself to do so? huh'
             }
           },
 
@@ -586,23 +796,15 @@ export const moreAboutProject = [
             data: {
               text: 'Six.0 Entry to site',
               icon: <GiClubs />,
-              img: '/assets/works/wm/7.png'
+              img: '/assets/works/ccd/2.png'
             }
           },
           {
             isImage: false,
             data: {
               isHeader: false,
-              typeSubHeader: 'One page for all options!',
-              typeContent: 'You have everything on table. Just know what to do. You have option to change password, 2factor authentication, deleting account, so on...'
-            }
-          },
-          {
-            isImage: true,
-            data: {
-              text: 'Seven.O All settings',
-              icon: <GiClubs />,
-              img: '/assets/works/wm/9.png'
+              typeSubHeader: 'Really a Challange!',
+              typeContent: 'It was really a challanging task to finish. Have given a design and to turn it into animations, by randomly popping out the company logos whenever user scrolls to that section in home.'
             }
           },
           {
@@ -610,7 +812,7 @@ export const moreAboutProject = [
             data: {
               text: 'Eight.O Deleting Account',
               icon: <GiClubs />,
-              img: '/assets/works/wm/3.png'
+              img: '/assets/works/ccd/4.png'
             }
           },
 
@@ -618,13 +820,52 @@ export const moreAboutProject = [
         ]
       },
       {
+        isHeaderExist: false,
+        isBlocksExist: true,
+        isSupportContentExist: false,
+        blocksColor: BLUE_COLOR,
+        blocks: [
+          {
+            isFinal: true,
+            icon: <PiFigmaLogoDuotone />,
+            note: 'More Components',
+            header: 'Contributed more in frontend like,  404 page, Student Page, Loader, Lazyloading images etc',
+            useNums: false
+          }
+        ]
+      },
+      {
+        isHeaderExist: false,
+        isBlocksExist: false,
+        isSupportContentExist: true,
+        supportContent: [
+
+          {
+            isImage: false,
+            data: {
+              isHeader: false,
+              typeSubHeader: 'Helping peer dev',
+              typeContent: 'Contributed to Horizontal drag effect using Framer motion and build responsive footer, and easy peasy cool looking cursor animation, which has a trailer to it.'
+            }
+          },
+          {
+            isImage: true,
+            data: {
+              text: 'Seven.O All settings',
+              icon: <GiClubs />,
+              img: '/assets/works/ccd/5.png'
+            }
+          },
+        ]
+      },
+      {
         isHeaderExist: true,
         headerContent: {
           isHeader: true,
           type: 'Output',
-          typeHeader: 'Finally we reach end of sea.',
-          typeSubHeader: 'This project enriched my design skills as well as coding skills. ',
-          typeContent: "It exposed me to different tools and errors. Like Apex charts, React Charts, Data integration with charts, Axios Cors Errors, Deploying errors, Protected Routes, Authentications with firebase, React and express routers, MongodB  so on...."
+          typeHeader: 'Deploying',
+          typeSubHeader: 'Finidings are pretty good when bugs came!',
+          typeContent: "This is a really good tenure of mine, sitting at desk going through bugs that came from no where in production. Im very happy with what I did from myside and contributing the other side. "
         },
         isSupportContentExist: false,
         isBlocksExist: true,
@@ -633,27 +874,289 @@ export const moreAboutProject = [
           {
             isFinal: false,
             icon: <PiFigmaLogoDuotone />,
-
-            header: 'Completed Figma',
-            content: 'Learned creating components, maskings, design principles so on.',
+            header: 'Achievment',
+            content: 'Done all our tasks with in time and completed intern successfully',
             useNums: true,
           },
           {
             isFinal: false,
             icon: <PiGameControllerDuotone />,
-            header: 'Decoded Figma',
-            content: 'Decoded various task by breaking them into chunks and components to build website.',
+            header: 'Greater UI',
+            content: 'Seamless UI and overall Effect is greater for visitors',
             useNums: true,
           },
           {
             icon: <GiClubs />,
             isFinal: false,
-            header: 'Seekings',
-            content: 'Learned a lot of things in building website, as I explained above',
+            header: 'Lessons',
+            content: 'Apart from plenty technical knowledge, I gained more patience to solve errors.',
             useNums: true,
           }
         ],
-      }
+      },
+    ]
+  },
+  {
+    projectName: 'Algozenith',
+    introduction: {
+      name: 'Algozenith - 2023',
+      description: 'Coding Club at NITC 2023',
+      img: '/assets/works/az/0.png',
+      bgColor: ''
+    },
+    summary: {
+
+      role: {
+        type: 'Full Stack & UI',
+        context: 'Crafting the website design and tranforming into code!'
+
+      },
+      isTeam: true,
+      team: [{
+        teamate: 'Harshavardhan',
+        twork: 'Senior Developer'
+      },
+      ],
+      timeline: '50+ Nights',
+      completed: true,
+      progress: 'Done Developing and deploying',
+      overview: [
+        "Website that club to reach students well enough for many purposes, like Jobs References, POTD, Contest etc.",
+        "It should showcase the Placed students reviews and their approach to a company. So lots of content and revisions are obvious."
+      ],
+    },
+
+    projectDetails: [
+      {
+        isHeaderExist: true,
+        headerContent: {
+          isHeader: true,
+          type: 'Challange',
+          typeHeader: 'Should start from Zero',
+          typeSubHeader: 'Clean and To the point',
+          typeContent: 'Have no Idea from where should I start. Also no proper refereces according to the context of the website.'
+        },
+        isSupportContentExist: false,
+        isBlocksExist: true,
+        blocksColor: RED_COLOR,
+        blocks: [
+          {
+            isFinal: false,
+            icon: <PiFigmaLogoDuotone />,
+            header: 'Design',
+            content: 'Design should include all the sections in it.',
+            useNums: true,
+          },
+          {
+            isFinal: false,
+            icon: <PiGameControllerDuotone />,
+            header: 'Full Stack',
+            content: 'Turning the design corners and edges into code',
+            useNums: true,
+          },
+          {
+            isFinal: false,
+            icon: <GiClubs />,
+            header: 'Production',
+            content: 'After Frontend and Backend, deploying is the final stage to put on!',
+            useNums: true
+          }
+        ],
+      },
+      {
+        isHeaderExist: true,
+        headerContent: {
+          isHeader: true,
+          type: 'Components',
+          typeHeader: 'UI Phase',
+          typeSubHeader: 'Building bricks by bricks',
+          typeContent: 'Building each component and layout step by step and having multiple revisions in between. Parallay coding where we are sure and layout is fixed. '
+        },
+        isSupportContentExist: true,
+        isBlocksExist: false,
+        supportContent: [
+          {
+            isImage: true,
+            data: {
+              text: 'One.O  workflow of the website',
+              icon: <GiClubs />,
+              img: '/assets/works/az/az.png'
+            }
+          },
+        ]
+      },
+      {
+        isHeaderExist:true,
+       headerContent: {
+          isHeader: true,
+          type: 'Components',
+          typeHeader: 'Blocks Stage',
+          typeSubHeader: 'Building components',
+          typeContent: 'Building and creating content to make website reachable to the targeted audience. This is ensure the smooth flow of design as well'
+       },
+        isBlocksExist:false,
+        isSupportContentExist:true,
+        supportContent:[
+          {
+            isImage: true,
+            data: {
+              text: 'One.O  workflow of the website',
+              icon: <GiClubs />,
+              img: '/assets/works/az/1.png'
+            }
+
+          }
+        ]
+      },
+      {
+        isHeaderExist: false,
+        isSupportContentExist: false,
+        isBlocksExist: true,
+        blocksColor: BLUE_COLOR,
+        blocks: [
+          {
+            isFinal: true,
+            icon: <PiFigmaLogoDuotone />,
+            note: 'Key',
+            header: 'The above design turned the website all the way from zero to hero',
+            useNums: false
+
+          }
+        ]
+      },
+      {
+        isHeaderExist: false,
+        isSupportContentExist: true,
+        isBlocksExist: false,
+        supportContent: [
+          {
+            isImage: false,
+            data: {
+              isHeader: false,
+              typeSubHeader: 'So much stuff',
+              typeContent: 'Making this About section took all day with multiple revisions and figma disign was changing in a blink of eye. But dev has no choice to scream, huhuhuh'
+            }
+          },
+          {
+            isImage: true,
+            data: {
+              text: 'Three.O About section Component',
+              icon: <GiClubs />,
+              img: '/assets/works/ccd/7.png'
+            }
+          },
+          {
+            isImage: false,
+            data: {
+              isHeader: false,
+              typeSubHeader: 'Simplicity ',
+              typeContent: 'Used only CSS to achieve the morque effect, i.e horizontal scrolling , instead of using the Framer motion to do so. Challanged myself to do so? huh'
+            }
+          },
+
+          {
+            isImage: true,
+            data: {
+              text: 'Six.0 Entry to site',
+              icon: <GiClubs />,
+              img: '/assets/works/ccd/2.png'
+            }
+          },
+          {
+            isImage: false,
+            data: {
+              isHeader: false,
+              typeSubHeader: 'Really a Challange!',
+              typeContent: 'It was really a challanging task to finish. Have given a design and to turn it into animations, by randomly popping out the company logos whenever user scrolls to that section in home.'
+            }
+          },
+          {
+            isImage: true,
+            data: {
+              text: 'Eight.O Deleting Account',
+              icon: <GiClubs />,
+              img: '/assets/works/ccd/4.png'
+            }
+          },
+
+
+        ]
+      },
+      {
+        isHeaderExist: false,
+        isBlocksExist: true,
+        isSupportContentExist: false,
+        blocksColor: BLUE_COLOR,
+        blocks: [
+          {
+            isFinal: true,
+            icon: <PiFigmaLogoDuotone />,
+            note: 'More Components',
+            header: 'Contributed more in frontend like,  404 page, Student Page, Loader, Lazyloading images etc',
+            useNums: false
+          }
+        ]
+      },
+      {
+        isHeaderExist: false,
+        isBlocksExist: false,
+        isSupportContentExist: true,
+        supportContent: [
+
+          {
+            isImage: false,
+            data: {
+              isHeader: false,
+              typeSubHeader: 'Helping peer dev',
+              typeContent: 'Contributed to Horizontal drag effect using Framer motion and build responsive footer, and easy peasy cool looking cursor animation, which has a trailer to it.'
+            }
+          },
+          {
+            isImage: true,
+            data: {
+              text: 'Seven.O All settings',
+              icon: <GiClubs />,
+              img: '/assets/works/ccd/5.png'
+            }
+          },
+        ]
+      },
+      {
+        isHeaderExist: true,
+        headerContent: {
+          isHeader: true,
+          type: 'Output',
+          typeHeader: 'Deploying',
+          typeSubHeader: 'Finidings are pretty good when bugs came!',
+          typeContent: "This is a really good tenure of mine, sitting at desk going through bugs that came from no where in production. Im very happy with what I did from myside and contributing the other side. "
+        },
+        isSupportContentExist: false,
+        isBlocksExist: true,
+        blocksColor: GREEN_COLOR,
+        blocks: [
+          {
+            isFinal: false,
+            icon: <PiFigmaLogoDuotone />,
+            header: 'Achievment',
+            content: 'Done all our tasks with in time and completed intern successfully',
+            useNums: true,
+          },
+          {
+            isFinal: false,
+            icon: <PiGameControllerDuotone />,
+            header: 'Greater UI',
+            content: 'Seamless UI and overall Effect is greater for visitors',
+            useNums: true,
+          },
+          {
+            icon: <GiClubs />,
+            isFinal: false,
+            header: 'Lessons',
+            content: 'Apart from plenty technical knowledge, I gained more patience to solve errors.',
+            useNums: true,
+          }
+        ],
+      },
     ]
   }
 
