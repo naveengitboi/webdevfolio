@@ -25,7 +25,7 @@ const AboutProject = () => {
     <div>
       {loaded && <ProjectIntro intro={details.introduction} />
       }
-      <div className='defaultPadding'>
+      {loaded && <div className='defaultPadding'>
         <ProjectInfoContainer projLink={details.introduction.projectLink} work={details.summary} loaded={loaded} />
 
         {loaded &&
@@ -39,6 +39,7 @@ const AboutProject = () => {
         }
 
       </div>
+      }
     </div >
   )
 }
