@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import '../css/PIContainer.css';
 import { GreenDot, OrangeDot } from './ThreeDots'
 const ProjectInfoContainer = (props) => {
-  const { loaded, work } = props
+  const { loaded, work, projLink } = props
   return (
     <>
       {loaded &&
@@ -43,6 +43,12 @@ const ProjectInfoContainer = (props) => {
             <div className="PICSection">
               <p className="mediumfont highlightContent">Timeline</p>
               <p className="mediumfont">{work.timeline}</p>
+            </div>{" "}
+
+            <div className="PICSection">
+              <p className="mediumfont highlightContent">Github</p>
+              <a href={projLink} target="_blank" className="mediumfont" >Check Out</a>
+
             </div>{" "}
           </div>
           <div className="PICOverview ">

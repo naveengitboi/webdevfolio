@@ -11,15 +11,15 @@ const AboutProject = () => {
   const { proj } = useParams()
   const project = proj
   useEffect(() => {
-
     moreAboutProject.filter((projectItem) => {
       if (projectItem.projectName === project) {
         setDetails(projectItem);
+      }
         setLoaded(true)
         return projectItem;
-      }
     })
-  })
+
+  }, [])
 
   return (
 
@@ -27,7 +27,7 @@ const AboutProject = () => {
       {loaded && <ProjectIntro intro={details.introduction} />
       }
       <div className='defaultPadding'>
-        <ProjectInfoContainer work={details.summary} loaded={loaded} />
+        <ProjectInfoContainer projLink={details.introduction.projectLink} work={details.summary} loaded={loaded} />
 
         {loaded &&
           details.projectDetails.map((eachSection, idx) => {
