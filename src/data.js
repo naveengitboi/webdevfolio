@@ -396,7 +396,7 @@ export const moreAboutProject = [
       description: 'Graphic Design Portfolio - 2021',
       img: '/assets/works/ps/0.png',
       bgColor: '#6A8C13',
-      projectLink: 'https://github.com/naveengitboi/walletmanagerapp'
+      projectLink: 'https://github.com/naveengitboi/pswebsite'
     },
     summary: {
 
@@ -619,7 +619,7 @@ export const moreAboutProject = [
       description: '@Internship at NITC 2023',
       img: '/assets/works/ccd/0.png',
       bgColor: '#121212',
-      projectLink: 'https://github.com/naveengitboi/walletmanagerapp'
+      projectLink: 'https://github.com/CCD-NITC-Website/ccd-react-website'
     },
     summary: {
 
@@ -880,7 +880,7 @@ export const moreAboutProject = [
       description: 'Coding Club at NITC 2023',
       img: '/assets/works/az/0.png',
       bgColor: '#6E68A9',
-      projectLink:''
+      projectLink:'https://github.com/naveengitboi/Algozenith-NITC-Codingclub'
     },
     summary: {
 
