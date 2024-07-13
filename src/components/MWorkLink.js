@@ -1,13 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { removeCursor, cursorType } from '../Redux/CursorSlice';
 import { useDispatch } from 'react-redux';
 
-function MWorkLink() {
+function MWorkLink({proj}) {
   const dispatch = useDispatch()
   return (
-    <Link to='/project/1'>
+    <a href="linka" target="_blank">
       <motion.div
         initial="initial"
         whileHover={"whileHover"}
@@ -31,7 +30,7 @@ function MWorkLink() {
             }}
           >
             {
-              'Hello World'.split('').map((l, idx) => {
+              proj.project.split('').map((l, idx) => {
                 return (
                   <motion.span key={idx}
                     variants={{
@@ -47,13 +46,20 @@ function MWorkLink() {
             }
           </motion.span>
           <p className='smallfont'>
-            of X and Y offsets from the element, blur radius, and color.
+                {proj.desc}
+          </p>
+          <p className='smallfont'>
+            {
+              proj.learnings.map((item) => {
+                return (
+                  <span>{item},  </span>
+                )
+              })
+            }
           </p>
         </div>
 
-
-
-        <motion.img src="/assets/mine.jpg" alt="mine"
+        <motion.img src={proj.image} alt="mine"
           variants={{
             initial: {
               scale: 0,
@@ -71,7 +77,7 @@ function MWorkLink() {
 
 
       </motion.div>
-    </Link>
+    </a>
   )
 }
 

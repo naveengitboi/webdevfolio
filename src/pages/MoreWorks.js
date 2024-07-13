@@ -1,12 +1,19 @@
 import React from 'react'
 import MWorkLink from '../components/MWorkLink'
 import '../css/MWorksPage.css'
-function MoreWorks() {
+import {moreWorks} from '../MWorksData' 
+function MoreWorks()  {
   return (
     <div className='moreWorksPage'>
 
-      <MWorkLink />
-      
+      {
+         moreWorks.map((proj) => {
+          return (
+          <MWorkLink proj={proj} />
+          )
+        })
+      }
+
 
     </div>
   )

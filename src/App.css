@@ -148,7 +148,6 @@ body {
     margin: 10vh 0;
 }
 
-
 @media screen and (max-width: 1280px) {
   :root {
     --sides_padding: 8vw;

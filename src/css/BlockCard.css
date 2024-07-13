@@ -100,6 +100,19 @@
   {
     margin: 2rem 0;
   }
+
+  .bgImageVideo .iwVideo
+  {
+    top:50px;
+  }
+  
+}
+
+@media screen and (max-width:860px){
+  .bgImageVideo .iwVideo
+  {
+    top:40px;
+  }
 }
 
 @media screen and (max-width: 680px){
@@ -111,5 +124,9 @@
   .imageWrapper .bottomTextImage .svgSpan svg
   {
     font-size: 0.9rem;
+  }
+  .bgImageVideo .iwVideo
+  {
+    top:30px;
   }
 }

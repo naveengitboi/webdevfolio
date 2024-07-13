@@ -3,6 +3,7 @@ import Introduction from '../components/Introduction'
 import Work from './Work'
 
 import '../css/Home.css'
+import AttentionScroller from './AttentionScroller'
 
 
 function Home(props) {
@@ -10,7 +11,9 @@ function Home(props) {
     <div className='defaultPadding'>
       <Introduction />
       <Work />
+      <AttentionScroller />
     </div>
+
   )
 }
 

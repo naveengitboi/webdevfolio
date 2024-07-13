@@ -40,7 +40,7 @@ export const skillInfo = [
   },
 
   {
-    
+
     stuff: ['DSA', 'Python', 'C++(intermediate)', 'JavaScript', 'C', 'OOPs']
   },
 
@@ -77,30 +77,14 @@ export const experienceInfo = [
 
 
 export const projectsInfo = [
-  {
-    proj: "Youtube Clone",
-    projDescription: "I mastered React and backend tools, excelling in crafting powerful web applications with engaging interfaces",
-    skillsUsed: ["React JS", "Mongo DB", "Authentication", "REST API", "Routers"],
-    projLink: "https://github.com/naveengitboi/youtubeclone",
-    imgUrl: '/assets/youtube.jpg',
-    linkType: "github",
 
-  },
   {
-    proj: "Student Learning Tracker",
-    projDescription: "Creating a website to track student learning and provide essential tools, driven by the need for a personal learning journey companion.",
-    skillsUsed: ["React JS", "Express", "Mongo DB", "Authentication", "REST API", "Routers"],
-    projLink: "https://github.com/naveengitboi/student_tracker",
-    imgUrl: '/assets/sttracker.jpg',
-    linkType: "github"
-  },
-  {
-    proj: "Basic Dept clone",
+    proj: "CCD NITC",
     projDescription: "Revamped a website for elegance and functionality using React JS, expanding my expertise in the framework.",
     skillsUsed: ["React JS", "Routers"],
-    projLink: "https://github.com/naveengitboi/basic_dept_clone",
-    imgUrl: '/assets/basicdept.jpg',
-    linkType: "github"
+    projLink: "https://github.com/CCD-NITC-Website/ccd-react-website",
+    imgUrl: '/assets/works/ccd/5.png',
+    linkType: "github",
   },
   {
     proj: "Graphic Designfolio",
@@ -111,30 +95,20 @@ export const projectsInfo = [
     linkType: "server"
 
   },
-
-
   {
     proj: "Wallet Manager",
     projDescription: "Revamped a website for elegance and functionality using React JS, expanding my expertise in the framework.",
-    skillsUsed: ["React JS", "Routers"],
-    projLink: "https://github.com/naveengitboi/basic_dept_clone",
-    imgUrl: '/assets/basicdept.jpg',
-    linkType: "github",
-  },
-  {
-    proj: "ccd",
-    projDescription: "Revamped a website for elegance and functionality using React JS, expanding my expertise in the framework.",
-    skillsUsed: ["React JS", "Routers"],
-    projLink: "https://github.com/naveengitboi/basic_dept_clone",
-    imgUrl: '/assets/basicdept.jpg',
+    skillsUsed: ["React JS", "Routers", "Node js", "Express Js"],
+    projLink: "https://github.com/naveengitboi/walletmanagerapp",
+    imgUrl: '/assets/works/wm/9.png',
     linkType: "github",
   },
   {
     proj: "Algozenith",
     projDescription: "Revamped a website for elegance and functionality using React JS, expanding my expertise in the framework.",
     skillsUsed: ["React JS", "Routers"],
-    projLink: "https://github.com/naveengitboi/basic_dept_clone",
-    imgUrl: '/assets/basicdept.jpg',
+    projLink: "https://github.com/naveengitboi/Algozenith-NITC-Codingclub",
+    imgUrl: '/assets/works/az/1.png',
     linkType: "github",
   }
 ]
@@ -148,7 +122,8 @@ export const moreAboutProject = [
       name: 'Wallet Manager-2024',
       description: 'Made with LOVE 2024',
       img: '/assets/works/wm/0.png',
-      bgColor: '#073F6E'
+      bgColor: '#F2D2C9',
+      projectLink: 'https://github.com/naveengitboi/walletmanagerapp'
     },
     summary: {
 
@@ -262,7 +237,7 @@ export const moreAboutProject = [
             data: {
               text: 'Two.O Glimpse of Small Components',
               icon: <GiClubs />,
-              img: '/assets/works/ccd/7.png'
+              img: '/assets/works/wm/1.png'
             }
           },
           {
@@ -420,7 +395,8 @@ export const moreAboutProject = [
       name: 'GDFolio',
       description: 'Graphic Design Portfolio - 2021',
       img: '/assets/works/ps/0.png',
-      bgColor: '#6A8C13'
+      bgColor: '#6A8C13',
+      projectLink: 'https://github.com/naveengitboi/pswebsite'
     },
     summary: {
 
@@ -637,12 +613,13 @@ export const moreAboutProject = [
   },
 
   {
-    projectName: 'ccd',
+    projectName: 'CCD NITC',
     introduction: {
       name: 'CCD - 2023',
       description: '@Internship at NITC 2023',
       img: '/assets/works/ccd/0.png',
-      bgColor: '#121212'
+      bgColor: '#121212',
+      projectLink: 'https://github.com/CCD-NITC-Website/ccd-react-website'
     },
     summary: {
 
@@ -902,7 +879,8 @@ export const moreAboutProject = [
       name: 'Algozenith - 2023',
       description: 'Coding Club at NITC 2023',
       img: '/assets/works/az/0.png',
-      bgColor: ''
+      bgColor: '#6E68A9',
+      projectLink:'https://github.com/naveengitboi/Algozenith-NITC-Codingclub'
     },
     summary: {
 
@@ -986,17 +964,17 @@ export const moreAboutProject = [
         ]
       },
       {
-        isHeaderExist:true,
-       headerContent: {
+        isHeaderExist: true,
+        headerContent: {
           isHeader: true,
           type: 'Components',
           typeHeader: 'Blocks Stage',
           typeSubHeader: 'Building components',
           typeContent: 'Building and creating content to make website reachable to the targeted audience. This is ensure the smooth flow of design as well'
-       },
-        isBlocksExist:false,
-        isSupportContentExist:true,
-        supportContent:[
+        },
+        isBlocksExist: false,
+        isSupportContentExist: true,
+        supportContent: [
           {
             isImage: true,
             data: {
@@ -1161,3 +1139,6 @@ export const moreAboutProject = [
   }
 
 ]
+
+
+

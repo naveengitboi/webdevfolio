@@ -60,6 +60,7 @@ function App() {
                 }
               />
               <Route path="/project/:proj" element={< AboutProject />} />
+              <Route path='/moreworks' element={<MoreWorks />} />
             </Routes>
             <Footer />
           </div>
