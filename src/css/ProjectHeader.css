@@ -26,3 +26,32 @@
 .phSection .mediumfont {
   color: var(--text_gray_color);
 }
+
+@media screen and (max-width:990px){
+ .phWrapper
+  {
+    padding: 2rem 0;
+    margin: 1rem 0;
+  }
+  .phWrapper .heading{
+    padding: 0.5rem 0;
+  }
+  .phSection{
+  
+    margin :1rem 0;
+  }
+
+}
+
+@media screen and (max-width:730px){
+    .phSection
+  {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .phSection .mainfont
+  {
+    margin: 0.5rem 0;
+    padding-right: 0;
+  }
+}

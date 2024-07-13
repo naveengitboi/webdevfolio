@@ -7,7 +7,7 @@ import { BsStars } from "react-icons/bs"; const ProjectImage = ({ img }) => {
     <div className='imageWrapper'>
       {!isVideo ? (<img src={img.img} alt={img.text} />) : (
         <div className='bgImageVideo'>
-          <img src={'/assets/bg.png'} />
+          <img src={'/assets/bg.png'} alt={img.text} />
           <video className='iwVideo' autoPlay loop >
             <source type='video/mp4' src={img.img} />
           </video>

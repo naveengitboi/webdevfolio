@@ -37,7 +37,7 @@ font-family: 'Space Grotesk', sans-serif;
   /* fontfamily */
   --large_font_size: 6rem;
   --med_large_font_size: 2.15rem;
-  --main_font_size: 1.5rem;
+ --main_font_size: 1.5rem;
   --medium_font_size: 1.15rem;
   --small_font_size: 1rem;
   --mini_font_size: 0.8rem;
@@ -148,18 +148,47 @@ body {
     margin: 10vh 0;
 }
 
-@media screen and (max-width: 1025px) {
+
+@media screen and (max-width: 1280px) {
   :root {
-    --sides_padding: 15vw;
+    --sides_padding: 8vw;
     --large_font_size: 5rem;
+  --med_large_font_size: 1.85rem;
+  
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1025px) {
   :root {
-    --sides_padding: 10vw;
-    --large_font_size: 4.8rem;
+    --sides_padding: 8vw;
+    --large_font_size: 5rem;
+  --med_large_font_size: 1.75rem;
+  
   }
+}
+
+@media screen and (max-width:970px){
+ :root{
+    --main_font_size : 1.15rem;
+    --mini_font_size:0.65rem;
+  }
+  .minifont
+  {
+    letter-spacing: 1.5px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  :root {
+    --sides_padding: 7vw;
+    --large_font_size: 4.1rem;
+    --med_large_font_size: 1.65rem;
+  }
+  .largefont
+  {
+    line-height: 1.25;
+  }
+  
 }
 
 @media screen and (max-width: 426px) {
@@ -167,11 +196,11 @@ body {
     /* padding */
     --sides_padding: 1.5rem;
     --link_padding: 0.5rem 1rem;
-
     /* fontfamily */
     --large_font_size: 3rem;
+    --med_large_font_size: 1.6rem;
     --main_font_size: 1.3rem;
-    --medium_font_size: 0.86rem;
+    --medium_font_size: 1rem;
     --small_font_size: 0.82rem;
     --mini_font_size: 0.7rem;
   }
@@ -181,7 +210,11 @@ body {
   pointer-events: none;
 }
 
+ .defaultPadding
+  {
 
+  padding-top: 5rem;
+  }
 }
 
 @media screen and (max-width: 321px) {
@@ -189,12 +222,16 @@ body {
     /* padding */
     --sides_padding: 1rem;
     --link_padding: 0.5rem 1rem;
-
     /* fontfamily */
     --large_font_size: 2.5rem;
+    --med_large_font_size:1.42rem;
     --main_font_size: 1.3rem;
     --medium_font_size: 0.86rem;
     --small_font_size: 0.82rem;
-    --mini_font_size: 0.7rem;
+    --mini_font_size: 0.6rem;
+  }
+  .defaultPadding 
+  {
+    padding-top: 2rem;
   }
 }
