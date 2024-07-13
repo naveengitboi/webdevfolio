@@ -14,11 +14,10 @@ const AboutProject = () => {
     moreAboutProject.filter((projectItem) => {
       if (projectItem.projectName === project) {
         setDetails(projectItem);
-      }
         setLoaded(true)
         return projectItem;
+      }
     })
-
   }, [])
 
   return (
