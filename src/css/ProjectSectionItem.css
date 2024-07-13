@@ -6,3 +6,19 @@
   align-items: center;
   margin:2rem 0;
 }
+
+@media screen and (max-width:1280px){
+  .blocksContainer
+  {
+  margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width:970px){
+  .blocksContainer
+  {
+    flex-wrap: wrap;
+  }
+}
+
+

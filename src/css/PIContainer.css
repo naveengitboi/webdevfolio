@@ -54,3 +54,18 @@
   align-items: center;
   gap: 20px;
 }
+
+
+@media screen and (max-width:728px){
+  .PICWrapper
+  {
+  grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+.PICSection {
+  margin:0.5rem 0;
+}
+
+
+}

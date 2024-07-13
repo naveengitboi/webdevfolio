@@ -1,6 +1,7 @@
 .projectIntroWrapper {
   display: flex;
   flex-direction: column;
+  border: 2px solid red;
   align-items: center;
   padding: 15vh 0 1rem;
   margin: 0;
@@ -18,3 +19,20 @@
   z-index: 100;
   width: 70%;
 }
+
+
+
+@media screen and (max-width:1250px){
+  .projectIntroWrapper img{
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width:450px){
+.projectIntroWrapper img {
+  margin: 2rem 0;
+  z-index: 100;
+}
+}
+

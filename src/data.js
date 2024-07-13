@@ -1000,7 +1000,7 @@ export const moreAboutProject = [
           {
             isImage: true,
             data: {
-              text: 'One.O  workflow of the website',
+              text: 'Two.O All in one and website intro',
               icon: <GiClubs />,
               img: '/assets/works/az/1.png'
             }
@@ -1033,49 +1033,49 @@ export const moreAboutProject = [
             isImage: false,
             data: {
               isHeader: false,
-              typeSubHeader: 'So much stuff',
-              typeContent: 'Making this About section took all day with multiple revisions and figma disign was changing in a blink of eye. But dev has no choice to scream, huhuhuh'
+              typeSubHeader: 'What they do?',
+              typeContent: 'To know the visitors what they really do in club, I decided to keep a actions header in the design.'
             }
           },
           {
             isImage: true,
             data: {
-              text: 'Three.O About section Component',
+              text: 'Three.O What they do?',
               icon: <GiClubs />,
-              img: '/assets/works/ccd/7.png'
+              img: '/assets/works/az/2.png'
             }
           },
           {
             isImage: false,
             data: {
               isHeader: false,
-              typeSubHeader: 'Simplicity ',
-              typeContent: 'Used only CSS to achieve the morque effect, i.e horizontal scrolling , instead of using the Framer motion to do so. Challanged myself to do so? huh'
+              typeSubHeader: 'Understandable Info',
+              typeContent: 'Cards should be readable and undestandable at first look without any distractions to the viewers eyes. So I came up with this ideas '
             }
           },
 
           {
             isImage: true,
             data: {
-              text: 'Six.0 Entry to site',
+              text: 'Four.0 Cards components',
               icon: <GiClubs />,
-              img: '/assets/works/ccd/2.png'
+              img: '/assets/works/az/3.png'
             }
           },
           {
             isImage: false,
             data: {
               isHeader: false,
-              typeSubHeader: 'Really a Challange!',
-              typeContent: 'It was really a challanging task to finish. Have given a design and to turn it into animations, by randomly popping out the company logos whenever user scrolls to that section in home.'
+              typeSubHeader: 'Minimal UI ',
+              typeContent: 'I went through multiple ideas on club guides page, events page, and placement talks. I finally ended up with minimal UI that follows the trend of the website from start. '
             }
           },
           {
             isImage: true,
             data: {
-              text: 'Eight.O Deleting Account',
+              text: 'Five.O Minima UI components',
               icon: <GiClubs />,
-              img: '/assets/works/ccd/4.png'
+              img: '/assets/works/az/4.png'
             }
           },
 
@@ -1107,16 +1107,16 @@ export const moreAboutProject = [
             isImage: false,
             data: {
               isHeader: false,
-              typeSubHeader: 'Helping peer dev',
-              typeContent: 'Contributed to Horizontal drag effect using Framer motion and build responsive footer, and easy peasy cool looking cursor animation, which has a trailer to it.'
+              typeSubHeader: 'CTA',
+              typeContent: 'This sets aprt from other clubs. Calling the talent early with no particular date/time. So we may not miss any skilled students even after inductions done.'
             }
           },
           {
             isImage: true,
             data: {
-              text: 'Seven.O All settings',
+              text: 'Six.O Contribute & Part of us',
               icon: <GiClubs />,
-              img: '/assets/works/ccd/5.png'
+              img: '/assets/works/az/5.png'
             }
           },
         ]

@@ -25,7 +25,7 @@
   filter: opacity(0.1);
   position: absolute;
   left: 50%;
-  tranform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   bottom: 5px;
   transition: all 0.25s ease;
 
@@ -90,3 +90,26 @@
 }
 
 
+@media screen and (max-width: 1281px){
+
+  .bcWrapper
+  {
+  padding: 0 0.5rem;
+  }
+   .imageWrapper
+  {
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 680px){
+  .imageWrapper .bottomTextImage
+  {
+    font-size: 0.57rem;
+    letter-spacing: 1px;
+  }
+  .imageWrapper .bottomTextImage .svgSpan svg
+  {
+    font-size: 0.9rem;
+  }
+}

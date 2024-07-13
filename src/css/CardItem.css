@@ -129,9 +129,9 @@
   box-shadow: 0px 0px 200px 0 var(--gray_medium_color);
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 776px) {
   .innerContainer {
-    padding: 0rem;
+    padding: 0.25rem;
     background: linear-gradient(black, black);
     position: relative;
     z-index: 2;
