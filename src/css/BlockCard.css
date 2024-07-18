@@ -70,63 +70,60 @@
 .imageWrapper:hover .svgSpan svg {
   fill: var(--text_color);
 }
-.bgImageVideo 
-{
+
+.bgImageVideo {
   position: relative;
   overflow: hidden;
 }
+
 .bgImageVideo .iwVideo {
-  z-index:100;
-  position:absolute;
-  top:0;
-  left:0;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 98%;
-  height:90%;
-  object-fit:cover;
-  top:70px;
+  height: 90%;
+  object-fit: cover;
+  top: 70px;
   object-position: left;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
 
-@media screen and (max-width: 1281px){
+@media screen and (max-width: 1281px) {
 
-  .bcWrapper
-  {
-  padding: 0 0.5rem;
+  .bcWrapper {
+    padding: 0 0.5rem;
   }
-   .imageWrapper
-  {
+
+  .imageWrapper {
     margin: 2rem 0;
   }
 
-  .bgImageVideo .iwVideo
-  {
-    top:50px;
+  .bgImageVideo .iwVideo {
+    top: 50px;
   }
-  
+
 }
 
-@media screen and (max-width:860px){
-  .bgImageVideo .iwVideo
-  {
-    top:40px;
+@media screen and (max-width:860px) {
+  .bgImageVideo .iwVideo {
+    top: 40px;
   }
 }
 
-@media screen and (max-width: 680px){
-  .imageWrapper .bottomTextImage
-  {
+@media screen and (max-width: 680px) {
+  .imageWrapper .bottomTextImage {
     font-size: 0.57rem;
     letter-spacing: 1px;
   }
-  .imageWrapper .bottomTextImage .svgSpan svg
-  {
+
+  .imageWrapper .bottomTextImage .svgSpan svg {
     font-size: 0.9rem;
   }
-  .bgImageVideo .iwVideo
-  {
-    top:30px;
+
+  .bgImageVideo .iwVideo {
+    top: 30px;
   }
 }

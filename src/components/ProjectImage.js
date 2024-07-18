@@ -1,5 +1,4 @@
 import React from 'react'
-import { GiClubs } from 'react-icons/gi'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../css/BlockCard.css'
@@ -7,9 +6,9 @@ import { BsStars } from "react-icons/bs"; const ProjectImage = ({ img }) => {
   const { isVideo = false } = img
   return (
     <div className='imageWrapper'>
-      {!isVideo ? (<img src={img.img} alt={img.text} />) : (
+      {!isVideo ? (<LazyLoadImage src={img.img} alt={img.text} />) : (
         <div className='bgImageVideo'>
-          <LazyLoadImage src={'/assets/bg.png'} alt={img.text} effect="blur" />
+          <img src={'/assets/bg.png'} alt={img.text} className="bgImageOfVideo" effect="blur" />
           <video className='iwVideo' autoPlay loop >
             <source type='video/mp4' src={img.img} />
           </video>

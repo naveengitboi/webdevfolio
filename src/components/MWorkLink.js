@@ -3,10 +3,10 @@ import { motion } from 'framer-motion'
 import { removeCursor, cursorType } from '../Redux/CursorSlice';
 import { useDispatch } from 'react-redux';
 
-function MWorkLink({proj}) {
+function MWorkLink({ proj }) {
   const dispatch = useDispatch()
   return (
-    <a href="linka" target="_blank">
+    <a href={proj.link} target="_blank" rel="noreferrer">
       <motion.div
         initial="initial"
         whileHover={"whileHover"}
@@ -16,7 +16,7 @@ function MWorkLink({proj}) {
           dispatch(removeCursor())
         }}
         onClick={() => dispatch(removeCursor())}
-        >
+      >
         <div className="mwProjContent">
           <motion.span className='medLargeFont'
             variants={{
@@ -46,7 +46,7 @@ function MWorkLink({proj}) {
             }
           </motion.span>
           <p className='smallfont'>
-                {proj.desc}
+            {proj.desc}
           </p>
           <p className='smallfont'>
             {
